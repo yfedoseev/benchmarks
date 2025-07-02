@@ -14,27 +14,24 @@ classified.
 and SVMs are described and pointers to the relevant
 papers are given. Recently published approaches with This survey describes fixed-class (see Section II-A),
 convolutionalneuralnetworksarementionedandtypical single-class affiliation (see Section II-B) algorithms
-problematic situations for segmentation algorithms are whichworkongrayscaleorcoloredsinglepixelimages 6102
+problematic situations for segmentation algorithms are whichworkongrayscaleorcoloredsinglepixelimages
 examined. A taxonomy of segmentation algorithms is
 (see Section II-C) in a completely automated, passive
 given.
 fashion (see Section II-D).
-yaM
 I. INTRODUCTION
 Semantic segmentation is the task of clustering A. Allowed classes
 parts of images together which belong to the same
-Semantic segmentation is a classification task. As object class. This type of algorithm has several use- 11
+Semantic segmentation is a classification task. As object class. This type of algorithm has several use-
 cases such as detecting road signs [MBLAGJ+07], such, the classes on which the algorithm is trained is a
 central design decision.
 detecting tumors [MBVLG02], detecting medical in-
-]VC.sc[
 strumentsinoperations[WAH97],coloncryptssegmen- Most algorithms work with a fixed set of classes;
 tation [CRSS14], land use and land cover classifica- some even only work on binary classes like fore-
 tion [HDT02]. In contrast, non-semantic segmentation ground vs background [RM07], [CS10] or street vs
 onlyclusterspixelstogetherbasedongeneralcharacter- no street [BKTT15].
 istics of single objects. Hence the task of non-semantic However, there are also unsupervised segmentation
 segmentation is not well-defined, as many different algorithms which do not distinguish classes at all (see
-2v14560.2061:viXra
 segmentations might be acceptable. Section V-B) as well as segmentation algorithms which
 Several applications of segmentation in medicine are are able to recognize when they don’t know a class.
 listed in [PXP00]. For example, in [GRC+08] a void class was added
@@ -60,6 +57,11 @@ semantic segmentation algorithms which are based on tion algorithms, there is a 
 neural networks in Section VI. Finally, Section VII class affiliation segmentation [LRAL08]. Similarly,
 informs the reader about typical problematic cases for recent publications in pixel-level object segmentation
 segmentation algorithms. used layered models [YHRF12].
+6102
+yaM
+11
+]VC.sc[
+2v14560.2061:viXra
 2
 C. Input Data
 The available data which can be used for the
@@ -118,8 +120,9 @@ as they were used in [HHR01], the smallest unit n ∈N with i,j ∈1,...,k be th
 ij 0
 is called a voxel.
 which belong to class i and were labeled as class j.
-=(cid:80)k
-(n ) is called a confusion matrix. Let t n
+(n ) is called a confusion matrix. Let t =
+(cid:80)k
+n
 ij i j=1 ij
 be the total number of pixels of class i.
 One way to compare segmentation algorithms is by
@@ -128,10 +131,20 @@ the pixel-wise accuracy of the predicted segmentation
 as done in many publications [SWRC06], [CP08],
 The operation state of the classifying machine can
 [LSD14]. This is also called per-pixel rate and de-
-eitherbeactiveasin[SUM+11],[SSA12]whererobots (cid:80)k i=1nii.
-fined as Taking the pixel-wise classification
-can move objects to find a segmentation or passive, h(cid:80) ak is=1twti
-accuracy o major drawbacks:
+eitherbeactiveasin[SUM+11],[SSA12]whererobots
+fined as
+(cid:80)k
+i=1
+nii.
+Taking the pixel-wise classification
+can move objects to find a segmentation or passive,
+accuracy h
+(cid:80)
+a
+k
+is=1tw
+ti
+o major drawbacks:
 where the received image cannot be influenced. Among
 the passive algorithms, some segment in a completely P1 Taskslikesegmentingimagesforautonomouscars
 automaticfashion,othersworkinaninteractivemode. have large regions which have one class. This
@@ -149,13 +162,15 @@ general “car” and the more specific “wheel of a very hardware, implementat
 car” data specific. For example, [HJBJ+96] notes that their
 Three accuracy metrics which do not suffer from algorithm needs 10s on a Sun SparcStation 20. The
 problem P1 are used in [LSD14]: fastestCPUeverproducedforthissystemhad200MHz.
-• mean accuracy: k1 ·(cid:80)k i=1 n ti ii ∈[0,1] C tao inm edpa ur si in ng gt ah nis Ind ti er le ic 7tl -y 48w 20it Kh wre is thul 3ts .9w Gh Hic zh ww oe ur le dno ob t-
+• mean accuracy: k 1 · (cid:80)k i=1 n t i i i ∈[0,1] C ta o in m ed pa u r s i i n n g g t a h n is In d t i e r l e i c 7 tl - y 48 w 20 it K h w re i s th ul 3 ts .9 w G h H ic z h w w o e u r l e dn o o b t -
 • mean intersection over union:
-1 ·(cid:80)k nii ∈[0,1] be meaningful.
-k i=1 ti−nii+(cid:80)k j=1nji However, it does still make sense to mention the
+1 · (cid:80)k nii ∈[0,1] be meaningful.
+k i=1 ti−nii+(cid:80)k j=1 nji However, it does still make sense to mention the
 • frequency weighted intersection over union:
 execution time as well as the hardware in individual
-((cid:80)k i=1t i)−1(cid:80)k i=1t i· ti−nii+n (cid:80)ii k j=1nji ∈[0,1] papers.Thisgivestheinterestedreaderthepossibilityto
+( (cid:80)k i=1 t i ) −1(cid:80)k i=1 t i · ti−nii+ n (cid:80) ii k
+j=1
+nji ∈[0,1] papers.Thisgivestheinterestedreaderthepossibilityto
 Another problem might be pixels which cannot be estimatehowdifficultitmightbetoadjustthealgorithm
 assigned to one of the known classes. For this reason, to work in the required time-constraints.
 [SWRC06] makes use of a void class. This class gets Besides the latency, the throughput is another
@@ -395,8 +410,8 @@ by a hyperplane. There is one hyperplane which
 Random Decision Forests were first proposed
 maximizes the distance to the next datapoints
 in [Ho95]. This type of classifier applies techniques
-(supportvectors).Thishyperplaneshouldbetaken:
 called ensemble learning, where multiple classifiers
+(supportvectors).Thishyperplaneshouldbetaken:
 are trained and a combination of their hypotheses is
 1
 used. One ensemble learning technique is the random minimize (cid:107)w(cid:107)2
@@ -424,10 +439,10 @@ C ∈ R+. The bigger C, the more errors are
 ordinal, interval, ratio) can be arbitrary. Another advan- 0
 accepted. The new optimization problem is:
 tage of Random Decision Forests compared to SVMs,
-for example, is the speed of training and classification. 1 (cid:88)m
-Decision trees were extensively studied in the past min wimize 2(cid:107)w(cid:107)2+C· ξ i
+for example, is the speed of training and classification. 1 (cid:88) m
+Decision trees were extensively studied in the past min w imize 2 (cid:107)w(cid:107)2+C· ξ i
 20 years and a multitude of training algorithms have i=1
-been proposed (e.g. ID3 in [Qui86], C4.5 in [Qui93]). s.t. ∀m i=1y i·((cid:104)w,x i(cid:105)+b)≥1−ξ i
+been proposed (e.g. ID3 in [Qui86], C4.5 in [Qui93]). s.t. ∀m i=1 y i ·((cid:104)w,x i (cid:105)+b)≥1−ξ i
 Possible training hyperparameters are the measure to
 Note that 0 ≤ ξ ≤ 1 means that the data point
 i
@@ -446,7 +461,7 @@ is not possible to split further. This is called a stopping
 w as a linear combination of the training data x :
 i
 criterion.
-There are two typical training modes: Central axis (cid:88)m
+There are two typical training modes: Central axis (cid:88) m
 w= α y x
 projection and perceptron training. In training, for i i i
 each node a hyperplane is searched which is optimal i=1
@@ -469,12 +484,16 @@ Forestsforsemanticsegmentationisgivenby[SCZ08]. to [Bur98]:
 m m m
 (cid:88) 1(cid:88)(cid:88)
 D. SVMs maximize α − α α y y (cid:104)x ,x (cid:105)
-αi i 2 i j i j i j
-SVMs are well-studied binary classifiers which can i=1 i=1j=1
+SVMs are well-studied binary classifiers which can
+αi
+i=1
+i 2
+i=1j=1
+i j i j i j
 be described by five central ideas. For those ideas, the s.t. ∀m 0≤α ≤C
 i=1 i
-training data is represented as (x i,y i) where x i is the (cid:88)m
-feature vector and y i ∈ {−1,1} the binary label for s.t. α iy i =0
+training data is represented as (x i ,y i ) where x i is the (cid:88) m
+feature vector and y i ∈ {−1,1} the binary label for s.t. α i y i =0
 training example i∈{1,...,m}. i=1
 8
 4) Not every dataset is linearly separable. This prob- yy 77 yy 88 yy 99
@@ -510,7 +529,7 @@ of degree p and coefficient r, the Gaussian radial (cid:124) (cid:123)(cid:122) 
 input output
 basis function (RBF) kernel
 random variables. Those random variables are condi-
-K Gauss(x i,x j)=e−γ(cid:107)x 2i σ− 2xj(cid:107)2 tionally independent, given their local neighborhood.
+K Gauss (x i ,x j )=e −γ(cid:107)x 2 i σ − 2 xj(cid:107)2 tionally independent, given their local neighborhood.
 These (in)dependencies can be expressed with a graph.
 and the sigmoid kernel Let G=(V,E) be the associated undirected graph
 of an MRF and C be the set of all maximal cliques in
@@ -525,8 +544,9 @@ binary classifiers to multi-class classification is singlepixel,randomvariablesx
 the one-vs-all and the one-vs-one strategy. In the and edges represent pixel neighborhood in computer
 one-vs-all strategy n classifiers have to be trained vision problems segmentation problems where MRFs
 which can distinguish one of the n classes against are used. Accordingly, the random variables y live
+all other classes. In the one-vs-one strategy
 n2−n
-all other classes. In the one-vs-one strategy on 1,...,nr of classes and the random variables x
+on 1,...,nr of classes and the random variables x
 2
 classifiers are trained; one classifier for each pair typically live on 0,...,255 or [0,1].
 of classes. The probability of x,y can be expressed as
@@ -604,7 +624,7 @@ are also used in [HZCP04], [SWRC06] for semantic the output of neurons while tra
 segmentation. Another contribution was the usage of an activation
 A method similar to CRFs was proposed function called rectified linear unit:
 in [GBVdW+10]. The system of Gonfaus et.al.
-ranked 1st by mean accuracy in the segmentation task ϕ ReLU(x)=max(0,x)
+ranked 1st by mean accuracy in the segmentation task ϕ ReLU (x)=max(0,x)
 of the PASCAL VOC 2010 challenge [EVGW+10]. Those are much faster to train than the commonly used
 An introduction to CRFs is given by [SM11]. sigmoid activation functions
 1
@@ -838,8 +858,8 @@ segmentation in microscope cell images: a hand-
 segmenteddatasetandcomparisonofalgorithms,”
 in Biomedical Imaging: From Nano to Macro, [GRC+08] S. Gould, J. Rodgers, D. Cohen, G. Elidan, and
 2009.ISBI’09.IEEEInternationalSymposiumon. D.Koller,“Multi-classsegmentationwithrelative
-locationprior,”InternationalJournalofComputer
 IEEE, 2009, pp. 518–521. [Online]. Available:
+locationprior,”InternationalJournalofComputer
 http://murphylab.web.cmu.edu/data Vision,vol.80,no.3,pp.300–316,Apr.2008.
 [CXGS12] M. D. Collins, J. Xu, L. Grady, and V. Singh, [GVSY13] S. Giannarou, M. Visentini-Scarzanella, and G.-
 “Random walks based multi-image segmentation: Z.Yang,“Probabilistictrackingofaffine-invariant

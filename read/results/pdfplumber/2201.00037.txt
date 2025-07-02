@@ -3,19 +3,20 @@ The influence of a fluid core and a solid inner core on the
 Cassini sate of Mercury
 Mathieu Dumberry 1
 1DepartmentofPhysics,UniversityofAlberta,Edmonton,Alberta,Canada.
-1202
 Key Points:
 • The Cassini state obliquity of Mercury’s mantle spin axis deviates from that of a rigid
 planet by no more than 0.01 arcmin.
-ceD
 • For a core magnetic field above 0.3 mT, electromagnetic coupling locks the fluid and solid
 cores into a common precession motion.
-• The larger the inner core is, the more the obliquity of the polar moment of inertia ap- 13
+• The larger the inner core is, the more the obliquity of the polar moment of inertia ap-
 proaches that expected for a rigid planet.
-]PE.hp-ortsa[
-1v73000.1022:viXra
 Corresponding author: Mathieu Dumberry, dumberry@ualberta.ca
 –1–
+1202
+ceD
+13
+]PE.hp-ortsa[
+1v73000.1022:viXra
 Confidential manuscript submitted to JGR-Planets
 Abstract
 We present a model of the Cassini state of Mercury that comprises an inner core, a fluid core
@@ -74,12 +75,21 @@ m 3 êL
 p
 êI
 3
-ple aq nu eatorial I a ns oc de en od fi n og
-rbit
+pl e a q n u e atorial I a n s o c d e e n o d f i n o g rbit
 M
 orbital
-o dr irb ei cta til
 plane
+o
+d
+r
+ir
+b
+e
+i
+c
+ta
+ti
+l
 on
 ε
 descending m
@@ -288,13 +298,20 @@ Confidential manuscript submitted to JGR-Planets
 êp
 a) 3 b)
 êI Ω
-3 ê 3s ê 3p
-θ
+3 θ ê 3 s ê 3 p
 ε m Ω
-êL m θ n s
-3 I ê 3I Cassini
-θ s Ω ê 3L plane
-θ f
+ê
+3
+L
+I θ
+m θ
+θ
+n
+s
+s
+Ω f ê 3 L ê 3 I
+Cassini
+plane
 p
 θ f I ε
 m êp
@@ -580,9 +597,8 @@ xT =[m˜,m˜ ,m˜ ,n˜ ,ε˜ ] , (22b)
 f s s m
 yT =[0,0,0,0,−(1+ω)tanI] , (22c)
 and the elements of matrix M are
- ω−e (1+ω)A¯ A¯f (1+ω)A A¯ ¯s A A¯ ¯sα 3(cid:0) (1+ω)e s+φ s(cid:1) φ m 
-M=  ω−ω 1+ω+e αf 1e+ sK −c Kmb ic+ AA ¯¯ fsK icb 1+− AA ω¯¯ fs +K Kicb (1+ω− −ωe αs 2α )1 sAA ¯¯ +fs 30  
- α 3e s b icb e α 3φ s α φ s   .
+ ω−e (1+ω)A¯ A¯ f (1+ω)A A ¯ ¯ s A A ¯ ¯ sα 3 (cid:0) (1+ω)e s +φ s (cid:1) φ m 
+M=    ω− ω α 3 e s 1+ω+e α f 1 e + s K − c K mb ic + b A A ¯ ¯ f sK icb 1+ − A A ω ¯ ¯ f s + K K icb icb (1+ω − − ωe α s 2 α ) 1 e s A A ¯ ¯ + f s α 3 φ s α 3 0 φ s     .
  
  0 0 1 ω 0 
 1 0 0 0 (1+ω)
@@ -722,7 +738,7 @@ This latter equation shows how the misaligned inner core and fluid core can lead
 cation of the mantle obliquity ε˜ . Approximate analytical solutions of n˜ and m˜ are given by
 m s f
 (cid:18) (cid:19)
-n˜ ≈ Ω p 1+ Ω o(K icb−α 1e s) (cid:0) sinI+cosIε˜ (cid:1) − Ω oα 3φ sε˜ , (32a)
+n˜ ≈ Ω p 1+ Ω o (K icb −α 1 e s ) (cid:0) sinI+cosIε˜ (cid:1) − Ω o α 3 φ sε˜ , (32a)
 s κλ λ m κλ m
 s f s
 m˜ ≈ Ω p(cid:0) sinI+cosIε˜ (cid:1) + Ω o A¯ s(cid:0) K −α e (cid:1) n˜ , (32b)
@@ -879,26 +895,47 @@ core density scenarios and in the absence of viscous and EM coupling (i.e. K = K
 cmb icb
 –16–
 Confidential manuscript submitted to JGR-Planets
-8000
-a b
-2100 1400
-7000 fluid core density
+1400
 1200
-2080 FCNint )mk(
-)3m/gk(
-6000 1000 suidar )ry(
-2060
-800 doirep
-5000 radius ytisned eroc
-2040
-B 600 M diulF
-C FCN
-4000 2020 400
-mantle density 200 FICN
-3000 2000
+1000
+800
+600
+400
+200
 0
-0 200 400 600 800 1000 1200 1400 0 200 400 600 800 1000 1200 1400
-Inner core radius (km) Inner core radius (km)
+)ry(
+doirep
+8000
+7000
+6000
+5000
+4000
+3000
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)3m/gk(
+ytisned
+2100
+2080
+2060
+2040
+2020
+2000
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)mk(
+suidar
+eroc
+diulF
+a b
+fluid core density
+FCNint
+us di
+B
+ra
+M
+C FCN
+mantle density FICN
 Figure 3. a) Fluid core density (red), mantle density (blue), fluid core radius (orange, right-hand
 side scale) and b) FICN (blue) and FCN (red) periods as a function of inner core radius. The FCN
 period when the external torque is set to zero (FCNint) is shown in orange. Solid lines correspond to
@@ -1013,26 +1050,39 @@ core must remain in close alignment with the mantle. Presented differently, sinc
 riod is more than 3000 times shorter than the forced precession period, the inner core can eas-
 –18–
 Confidential manuscript submitted to JGR-Planets
-a 4.5 b
 2.050
-4.0
-2.048 )nimcra( )nimcra(
-2.046 crustal th 1i 6c k kn mess ε εm 3.5 crustal th 1i 6c k kn mess m f
-26 km g
-36 km 26 km elgna elgna
-2.044 3.0 36 km
-n (x100)
-s ytiuqilbO ytiuqilbO
+2.048
+2.046
+2.044
 2.042
+2.040
+2.038
+)nimcra(
+elgna
+ytiuqilbO
+4.5
+4.0
+3.5
+3.0
 2.5
+2.0
+1.5
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)nimcra(
+elgna
+ytiuqilbO
+a b
+crustal th 1 i 6 c k k n m ess ε m crustal thickness m f ε 16 km
+26 km g
+36 km 26 km
+36 km
+n (x100)
+s
 ε
 m for a rigid planet
-2.040
-2.0
-2.038
-1.5
-0 200 400 600 800 1000 1200 1400 0 200 400 600 800 1000 1200 1400
-Inner core radius (km) Inner core radius (km)
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
 Figure 4. a) Obliquity of the mantle (ε˜ , solid lines) and of the principal moment of inertia (ε˜ ,
 m g
 dashed line) b) m˜ (solid lines) and n˜ (dashed lines, x100) as a function of inner core radius and for
@@ -1135,8 +1185,7 @@ been derived [e.g. Stewartson and Roberts, 1963; Busse, 1968; Rochester, 1976] a
 these solutions here. The parametrization of the viscous coupling constants K and K based
 cmb icb
 on them are given in Mathews and Guo [2005],
-πρ fr f4(cid:114) ν (cid:16) 0.195−1.976i(cid:17)
-K = , (44a)
+K = πρ f r f 4(cid:114) ν (cid:16) 0.195−1.976i (cid:17) , (44a)
 cmb A¯ 2Ω
 f o
 πρ r4(cid:114) ν (cid:16) (cid:17)
@@ -1219,27 +1268,41 @@ fluid spin axis from the mantle symmetry axis. Considering the upper bound in tu
 cosity that we have identified above (i.e ν ≈ 5×10−4 m2 s−1), the influence of viscous cou-
 –21–
 Confidential manuscript submitted to JGR-Planets
-kinematic viscosity: 0.01 m2 s-1 0.001 m2 s-1 0.0005 m2 s-1 0.0001 m2 s-1 0.00001 m2 s-1
-4.5
-a b
 2.050
-4.0
-2.048 3.5 )nimcra( )nimcra(
-2.046 ε g 3.0
-ε m 2.5 elgna elgna
+2.048
+ε 2.046 g
+ε m
 2.044
 m
-2.0 f ytiuqilbO ytiuqilbO
+f
 n
-2.042 1.5 s
+2.042 s
+2.040
+2.038
+)nimcra(
+elgna
+ytiuqilbO
+4.5
+4.0
+3.5
+3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)nimcra(
+elgna
+ytiuqilbO
+kinematic viscosity: 0.01 m2 s-1 0.001 m2 s-1 0.0005 m2 s-1 0.0001 m2 s-1 0.00001 m2 s-1
+a b
 ε
 m for a rigid planet
-2.040 1.0
-0.5
-2.038
-0.0
-0 200 400 600 800 1000 1200 1400 0 200 400 600 800 1000 1200 1400
-Inner core radius (km) Inner core radius (km)
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
 Figure 5. a) Obliquity of the mantle (ε˜ , solid lines) and gravity field (ε˜ , dashed lines) b) m˜
 m g f
 (solid lines) and n˜ (dashed lines) as a function of inner core radius and for different choices of kinematic
@@ -1294,17 +1357,23 @@ cmb icb
 has been developed in a few studies [e.g. Buffett, 1992; Buffett et al., 2002; Dumberry and Koot,
 2012]. Assuming a dominating axial dipole field, with a radial component at the CMB given
 √
-3(cid:10) Bd(cid:11) (cid:10) Bd(cid:11)
-by B = cosθ, where is the r.m.s. strength of the field, the coupling constant
+by B = 3
+(cid:10) Bd(cid:11)
+cosθ, where
+(cid:10) Bd(cid:11)
+is the r.m.s. strength of the field, the coupling constant
 r r r
 K can be written is the form
 cmb
+K =3(1−i)F
 (cid:10) Bd(cid:11)2
-K =3(1−i)F , (47)
+, (47)
 cmb cmb r
 where
-(cid:18) (cid:19)−1
-1 1 1
+1
+(cid:18)
+1 1
+(cid:19)−1
 F = + , (48)
 cmb Ω ρ r σ δ σ δ
 o f f m m f f
@@ -1316,9 +1385,14 @@ N A−2 the magnetic permeability of free space. The r.m.s. field strength (cid:
 r
 the Gauss coefficient g0 of the surface magnetic field by
 1
-(cid:18) R(cid:19)3
-(cid:10) Bd(cid:11) √2 (cid:12) (cid:12)g0(cid:12)
-= (cid:12) . (49)
+(cid:10) Bd(cid:11)
+= √
+2
+(cid:18)
+R
+(cid:19)3
+(cid:12) (cid:12)g0(cid:12)
+(cid:12) . (49)
 r 3 r f 1
 We can readily build an estimate of the amplitude of K . The electrical conductivity
 cmb
@@ -1330,8 +1404,13 @@ f
 m−1 [Pozzo et al., 2012; de Koker et al., 2012]. This implies that (σ δ )−1 (cid:29)(σ δ )−1. Tak-
 m m f f
 (cid:12) (cid:12)
-ing σ = 1 S m−1, (cid:12)g 10(cid:12) = 190 nT for Mercury’s dipole field [Anderson et al., 2012], r =
-m f
+ing σ
+m
+= 1 S m−1, (cid:12)g
+1
+0(cid:12) = 190 nT for Mercury’s dipole field [Anderson et al., 2012], r
+f
+=
 2000 km, ρ =7000 kg m−3, this gives K ≈(3.1×10−11)·(1−i). To put this amplitude
 f cmb
 in perspective, taking a molecular viscosity of ν =10−6 m2 s−1 in Equation (44a) gives a vis-
@@ -1432,8 +1511,11 @@ r r
 above 1 mT does not change the solution as EM coupling already dominates all other torques
 on the inner core. This is the case even when EM coupling transitions into the strong field regime.
 (cid:12) (cid:12)
-EM coupling at the CMB is included in these calculations, with σ = 1 S m−1 and (cid:12)g 10(cid:12) =
+EM coupling at the CMB is included in these calculations, with σ
 m
+= 1 S m−1 and (cid:12)g
+1
+0(cid:12) =
 190 nT, but remains much weaker than the inertial torque at the CMB, so for a small inner core
 we retrieved the solutions of ε˜ and m˜ shown in Figure 4.
 m f
@@ -1481,27 +1563,46 @@ Coupling models when viscous and EM stresses are both present have been presente
 Mathews and Guo [2005] and Deleplace and Cardin [2006]. However, in the light of our results,
 –25–
 Confidential manuscript submitted to JGR-Planets
-Br at ICB: 1 mT 0.3 mT 0.1 mT 0.03 mT 0.01 mT
-a 4.5 b
 2.050
-4.0
-2.048 ε
-m
-ε 3.5 )nimcra( )nimcra(
-2.046 g
-3.0
+2.048
+2.046
 2.044
-2.5 elgna elgna
 2.042
+2.040
+2.038
+2.036
+2.034
+2.032
+)nimcra(
+elgna
+ytiuqilbO
+4.5
+4.0
+3.5
+3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)nimcra(
+elgna
+ytiuqilbO
+Br at ICB: 1 mT 0.3 mT 0.1 mT 0.03 mT 0.01 mT
+a b
 ε
-2.040 m for a rigid planet 2.0 m ytiuqilbO ytiuqilbO
+m
+ε
+g
+ε
+m for a rigid planet m
 f
-2.038 1.5 n s
-2.036 1.0
-2.034 0.5
-2.032 0.0
-0 200 400 600 800 1000 1200 1400 0 200 400 600 800 1000 1200 1400
-Inner core radius (km) Inner core radius (km)
+n s
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
 Figure 6. a) Obliquity of the mantle (ε˜ , solid lines) and gravity field (ε˜ , dashed lines) b) m˜
 m g f
 (solid lines) and n˜ (dashed lines) as a function of inner core radius and for different choices of B
@@ -1541,29 +1642,47 @@ model included the tangential viscous stress at the ICB and CMB, but not the EM 
 Table 1 gives the obliquities of the mantle, fluid core and inner core, denoted respectively as
 –26–
 Confidential manuscript submitted to JGR-Planets
-ρ s = 8800 kg m-3 α 3: 0.20 0.15 0.10 0.05 0.01
-4.5
-a b
 2.050
-4.0
-2.048 ε
-m 3.5 )nimcra( )nimcra(
-2.046 ε
-g
-3.0
+2.048
+2.046
 2.044
-2.5 elgna elgna
 2.042
+2.040
+2.038
+2.036
+2.034
+2.032
+)nimcra(
+elgna
+ytiuqilbO
+4.5
+4.0
+3.5
+3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
+)nimcra(
+elgna
+ytiuqilbO
+ρ s = 8800 kg m-3 α 3: 0.20 0.15 0.10 0.05 0.01
+a b
 ε
-2.040 m for a rigid planet 2.0 m ytiuqilbO ytiuqilbO
+m
+ε
+g
+ε
+m for a rigid planet m
 f
-2.038 1.5 n
+n
 s
-2.036 1.0
-2.034 0.5
-2.032 0.0
-0 200 400 600 800 1000 1200 1400 0 200 400 600 800 1000 1200 1400
-Inner core radius (km) Inner core radius (km)
+0 200 400 600 800 1000 1200 1400
+Inner core radius (km)
 Figure 7. a) Obliquity of the mantle (ε˜ , solid lines) and gravity field (ε˜ , dashed lines) b) m˜
 m g f
 (solid lines) and n˜ (dashed lines) as a function of inner core radius, for a fixed inner core density of

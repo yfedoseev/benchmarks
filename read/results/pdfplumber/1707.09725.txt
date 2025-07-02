@@ -1,13 +1,8 @@
 Analysis and Optimization of
 Convolutional Neural Network
 Architectures
-7102
-luJ
-13
 Master Thesis of
-]VC.sc[
 Martin Thoma
-1v52790.7071:viXra
 Department of Computer Science
 Institute for Anthropomatics
 and
@@ -17,6 +12,11 @@ Second reviewer: Prof. Dr.–Ing. J. M. Zöllner
 Advisor: Dipl.–Inform. Michael Weber
 Research Period: 03. May 2017 – 03. August 2017
 KIT–UniversityoftheStateofBaden-WuerttembergandNationalResearchCenteroftheHelmholtzAssociation www.kit.edu
+7102
+luJ
+13
+]VC.sc[
+1v52790.7071:viXra
 
 Analysis and Optimization of Convolutional Neural
 Network Architectures
@@ -236,25 +236,27 @@ This chapter introduces linear image filters in Section 2.1, then standard layer
 CNNs are explained in Section 2.2. The layer block pattern is described in Section 2.3,
 transition layers in Section 2.4 and nine ways to analyze CNNs are described in Section 2.5.
 2.1. Linear Image Filters
-A linear image filter (also called a filter bank or a kernel) is an element F ∈ Rkw×k h×d,
+A linear image filter (also called a filter bank or a kernel) is an element F ∈ Rkw×k h ×d,
 where k represents the filter’s width, k the filter’s height and d the number of input
 w h
 channels. The filter F is convolved with the image I ∈ Rw×h×d to produce a new image I(cid:48).
 The output image I(cid:48) has only one channel. Each pixel I(cid:48)(x,y) of the output image gets
 calculated by point-wise multiplication of one filter element with one element of the original
 image I:
-(cid:98) (cid:88)k 2w(cid:99) (cid:98) (cid:88)k 2h(cid:99) (cid:88)d
+(cid:98) (cid:88) k 2 w(cid:99) (cid:98) (cid:88) k 2 h(cid:99) (cid:88) d
 I(cid:48)(x,y) = I(x+i ,y+i ,i )·F(i ,i ,i )
 x y c x y c
-ix=1−(cid:100)k 2w(cid:101)iy=1−(cid:100)k 2h(cid:101)ic=1
+ix=1−(cid:100)k
+2
+w(cid:101)iy=1−(cid:100) k
+2
+h(cid:101) ic=1
 This procedure is explained by Figure 2.1. It is essentially a discrete convolution.
 I ∈ R7×7 I(cid:48) ∈ R7×7
 47 187
 47 -642
 58 -849
-1 1 1 1 1 10 0 1 0 1 14 9 6 1 4 1 19 4 4 91 07 7 7 96 4 1 1 1 1 9 91 1 1 0 9 76 4 1 9 1 1 1 19 9 61 1 0 17 7 12 6 9 6 1 1 19 4 40 1 17 6 95 5 6 1 1 14 9 41 1 16 9 60 6 2 1 1 14 9 40 0 05 7 80 1 4 - F9 26 ilter- -53 8 kerne- 3 01 Re- s9 2 9 u3 8 4 l6 2 to- -5 f3 74 p3 953 2 oin- 2 t1 09 -0 w19 - - - - -5 3 7 5 4-4 2 4 1 6 00 0 8 7 - 5 4 5-2 4 55 2 95 5 39 9 64 - - -2 3 -4 1 574 59 0 550 08 5 - 2 1 1 3 26 81 8 7 6 26 01 5 3 8 32 - 83 2 51 2 18 5 73 6 18 1 18 - -2 2 91 1 51 6 78 2 45 8 60 8 - -5 1 68 6 20 5 66 5 43 6 01 5
-0
-6 l ise 8
+1 1 1 1 1 1 0 0 1 0 1 1 4 9 6 1 4 6 1 1 9 4 4 9 1 0 7 7 7 9 6 4 1 1 1 1 9 9 1 1 1 0 9 7 6 4 1 9 1 1 1 1 9 9 6 1 1 0 1 7 7 1 2 6 9 6 1 1 1 9 4 4 0 1 1 7 6 9 5 5 6 1 1 1 4 9 4 1 1 1 6 9 6 0 6 2 1 1 1 4 9 4 0 0 0 5 7 8 0 1 4 - F 9 2 6 ilter - - 5 3 8 kerne - 3 0 1 l Re - s 9 2 9 u 3 8 4 l 6 2 to - - 5 f 3 7 4 p 3 9 5 3 2 oin - 2 t 1 0 9 - 0 w 1 9 ise - - - - - 5 3 7 5 4 -4 2 4 1 6 0 0 0 8 7 8 - 5 4 5 - 2 4 5 5 2 9 5 5 3 9 9 6 4 - - - 2 3 - 4 1 5 7 4 5 9 0 5 5 0 0 8 5 0 - 2 1 1 3 2 6 8 1 8 7 6 2 6 0 1 5 3 8 3 2 - 8 3 2 5 1 2 1 8 5 7 3 6 1 8 1 1 8 - - 2 2 9 1 1 5 1 6 7 8 2 4 5 8 6 0 8 - - 5 1 6 8 6 2 0 5 6 6 5 4 3 6 0 1 5
 118 879
 63 F ∈ R3×3 multiplication 647
 112 302
@@ -265,7 +267,9 @@ outputimage,k2 multiplicationsandk2 additionsoftheproductshavetobecalculated.
 One important detail is how boundaries are treated. There are four common ways of
 boundary treatment:
 • don’t compute: The image I(cid:48) will be smaller than the original image. I(cid:48) ∈
-R(w−kw+1)×(h−k h+1)×d3, to be exact.
+R(w−kw+1)×(h−k
+h
++1)×d3 , to be exact.
 • zero padding: The image I is padded by zeros where the filter would access elements
 which do not exist. This will result in edges being detected at the border if the border
 pixels are not black, but doesn’t need any computation.
@@ -344,10 +348,14 @@ k
 o(i)(x) = b+ w ·x with i ∈ {1,...,w}×{1,...,h}×{1,...,d} [2.1]
 ij j
 j=1
-(cid:98) (cid:88)k 2w(cid:99) (cid:98) (cid:88)k 2h(cid:99) (cid:88)d
+(cid:98) (cid:88) k 2 w(cid:99) (cid:98) (cid:88) k 2 h(cid:99) (cid:88) d
 o(x,y,z)(I) = b+ F (i ,i ,i )·I(x+i ,y+i ,i ) [2.2]
 z x y c x y c
-ix=1−(cid:100)k 2w(cid:101)iy=1−(cid:100)k 2h(cid:101)ic=1
+ix=1−(cid:100)k
+2
+w(cid:101)iy=1−(cid:100) k
+2
+h(cid:101) ic=1
 with a bias b ∈ R, x ∈ {1,...,w}, y ∈ {1,...,h} and z ∈ {1,...,d}
 One can see that most weights of the equivalent MLP are zero and many weights are
 equivalent. Hence the advantage of CNNs compared to MLPs is the reduction of parameters.
@@ -358,6 +366,18 @@ for the dataset.
 See Figure 2.2 for a visualization of the application of a convolutional layer.
 n filters of
 size k×k×3
+w w
+h h
+t t
+d d
+wi wi
+3 feature maps
+n feature maps
+(e.g. RGB)
+h
+thgieh
+h
+thgieh
 ...
 neural
 ...
@@ -365,16 +385,8 @@ network
 ...
 apply
 ...
-h h
-w w
-data h ... h thgieh thgieh
-t t
-d d
-wi wi
+... data
 ...
-3 feature maps
-n feature maps
-(e.g. RGB)
 Figure 2.2.: Application of a single convolutional layer with n filters of size k×k×3 with stride
 s=1 to input data of size width×height with three channels.
 6
@@ -427,7 +439,13 @@ Stochastic pooling * [ZF13]
 Table 2.1.: Pooling types for a set A of activations a∈R.
 (*)Forstochasticpooling,eachofthep×pactivationvaluesa inthepoolingregiongets
 i
-pickedwithprobabilityp i = (cid:80) aja ∈i Aaj. Thisassumestheactivationsa i arenon-negative.
+pickedwithprobabilityp i = (cid:80)
+aj
+a
+∈
+i
+A
+aj . Thisassumestheactivationsa i arenon-negative.
 Pooling is applied for three reasons: To get local translational invariance, to get invariance
 against minor local changes and, most important, for data reduction to 1 th of the data by
 s2
@@ -508,11 +526,11 @@ x(k)−x¯(k)
 xˆ(k) =
 (cid:112)
 s(cid:48)[x(k)]2+ε
-with x¯(k) = 1 (cid:80)m x(k) being the sample mean and s(cid:48)[x(k)]2 = 1 (cid:80)m (x(k) −x¯(k)) the
+with x¯(k) = 1 (cid:80)m x (k) being the sample mean and s(cid:48)[x(k)]2 = 1 (cid:80)m (x (k) −x¯(k)) the
 m i=1 i m i=1 i
 sample variance where m ∈ N is the number of training samples per mini-batch, ε > 0
 ≥1
-being a small constant to prevent division by zero and x(k) is the activation of neuron k for
+being a small constant to prevent division by zero and x (k) is the activation of neuron k for
 i
 training sample i.
 Additionally, for each activation x(k) two parameters γ(k),β(k) are introduced which scale
@@ -687,8 +705,12 @@ ij
 items of class i were classified as class j. This means the correct classification is on the
 diagonal c and all wrong classifications are of the diagonal. The sum (cid:80)K (cid:80)K c is the
 ii i=1 j=1 ij
-total number of samples which were evaluated and (cid:80) i=1cii is the accuracy.
-(cid:80)K i=1(cid:80)K j=1cij
+total number of samples which were evaluated and (cid:80) i=1 cii is the accuracy.
+(cid:80)K
+i=1
+(cid:80)K
+j=1
+cij
 The sums r(i) = (cid:80)K c of each class i are worth being investigated as they show if the
 j=1 ij
 classes are skewed. If the number of samples of one class dominates the data set, then the
@@ -712,8 +734,8 @@ If s(i) is much lower than s(j), it is an indicator that more or cleaner trainin
 necessary for s(i).
 The class-wise confusion
 c
-k1k2
 f (k ,k ) =
+k1k2
 confusability 1 2 (cid:80)K
 c
 j=1 k1j
@@ -814,7 +836,7 @@ more common than all other classes, then the simplest way to achieve a high scor
 always classify everything as the most common class.
 In order to fix this problem, one can use the mean accuracy:
 k
-mean-accuracy(c) = 1 ·(cid:88) c ii ∈ [0,1]
+mean-accuracy(c) = 1 · (cid:88) c ii ∈ [0,1]
 k t
 i
 i=1
@@ -954,8 +976,7 @@ Filters can be compared with the k-translation correlation as introduced in [ZCZ
 i j f
 ρ (W ,W ) = max ∈ [−1,1],
 k i j
-(x,y)∈{−k,...,k}2\(0,0) (cid:107)W i(cid:107) 2(cid:107)W j(cid:107)
-2
+(x,y)∈{−k,...,k}2\(0,0) (cid:107)W i (cid:107) 2 (cid:107)W j (cid:107) 2
 where T(·,x,y) denotes the translation of the first operand by (x,y), with zero padding at
 the borders to keep the shape. (cid:104)·,·(cid:105) denotes the flattened inner product, where the two
 f
@@ -1048,7 +1069,7 @@ connected to the output nodes.
 the correlation between candidates output value V with the networks residual error:
 (cid:12) (cid:12)
 (cid:12) (cid:12)
-S = (cid:88)(cid:12) (cid:12)(cid:88)(cid:0) V p−V¯(cid:1) (E p,o−E¯ o)(cid:12) (cid:12)
+S = (cid:88)(cid:12) (cid:12) (cid:88)(cid:0) V p −V¯(cid:1) (E p,o −E¯ o ) (cid:12) (cid:12)
 (cid:12) (cid:12)
 o∈O(cid:12)p∈T (cid:12)
 where O is the set of output nodes, T is the training set, V is the candidate neurons
@@ -1524,23 +1545,30 @@ in average for each pair of epochs (i,i+1). This means if one knows only the rel
 of the validation accuracy of two models m and m(cid:48) in epoch i, it is doubtful if one can
 make any statement about the ordering of m and m(cid:48) in epoch i+1.
 0.7
-1.5
-0.6 2
-2.5 ycarucca
+0.6
 0.5
-3 ssol
-noitadilav
 0.4
-3.5
-0.3 maximum validation accuracy 4
-mmainxiimmuummvvaalliiddaattiioonnaaccccuurraaccyy
-minimummvaelaidnaltoiossn accuracy
-4.5
+0.3
 0.2
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 1 2 3 4 5 6 7 8 9 0 1 2 3 4
 1 1 1 1 1
 epoch
+ycarucca
+noitadilav
+1.5
+2
+2.5
+3
+3.5
+4
+maximum validation accuracy
+minimum validation accuracy
+4.5
+ssol
+maximum validation accuracy
+minimum validation accuracy
+mean loss
 Figure 5.7.: Minimum and maximum validation accuracy of the 10 trained models by epoch. The
 differences do not exceed 1% and does not increase by training epoch. Four models
 stopped the first training stage at epoch 133 which causes the shift in the loss and the
@@ -2610,7 +2638,7 @@ ji
 Nine variations which adjust the learning rate during training are:
 • Momentum:
 ∂E
-w(t+1) ← w(t) +∆w(t+1) with ∆w(t+1) = −η B +α∆w(t)
+w (t+1) ← w (t) +∆w (t+1) with ∆w (t+1) = −η B +α∆w (t)
 ji ji ji ji ∂w ji
 ji
 with α ∈ [0,1], typically 0.9 (e.g., [ZF14, MSM16])
@@ -2622,8 +2650,7 @@ with α ∈ [0,1], typically 0.9 (e.g., [ZF14, MSM16])
 a,c are constants.
 • Performance Scheduling [SHY+13]: Measure the error on the cross validation set and
 decrease the learning rate when the algorithms improvement is below a threshold.
-• Exponential Decay Learning Rate [SHY+13]: η(t) = η(0)·10− kt where t ∈ N is the
-0
+• Exponential Decay Learning Rate [SHY+13]: η(t) = η(0)·10− k t where t ∈ N 0 is the
 training step, η(0) is the initial learning rate, k ∈ N is the number of training steps
 ≥1
 until the learning rate is decreased by 1 th.
@@ -2664,8 +2691,8 @@ Sign function† {−1,1} 0 [KS02]
 
 +1 if x > 0
 Heaviside {0,1} 0 [MP43]
-0 if x < 0
 step function†
+0 if x < 0
 Logistic function 1 [0,1] ex [DJ99]
 1+e−x (ex+1)2
 Tanh ex−e−x = tanh(x) [−1,1] sech2(x) [LBBH98, Tho14a]
@@ -2677,15 +2704,15 @@ ReLU† max(0,x) [0,+∞) [KSH12]
 
 1 if x > 0
 LReLU†2 ϕ(x) = max(αx,x) (−∞,+∞) [MHN13, HZRS15b]
-α if x < 0
 (PReLU)
+α if x < 0
 Softplus log(ex+1) (0,+∞) ex [DBB+01, GBB11]
 ex+1
  
 x if x > 0 1 if x > 0
 ELU (−∞,+∞) [CUH15]
 α(ex−1) if x ≤ 0 αex otherwise
-Softmax‡ o(x) = exj [0,1]K o(x) · (cid:80)K k=1exk−exj [KSH12, Tho14a]
+Softmax‡ o(x) = exj [0,1]K o(x) · (cid:80)K k=1 exk−exj [KSH12, Tho14a]
 j (cid:80)K exk j (cid:80)K exk
 k=1  k=1
 1 if x = maxx

@@ -266,14 +266,14 @@ R2 überein.
 ×
 (Siehe Abbildung 1.2)
 6 1.1.TOPOLOGISCHERÄUME
-U2
-=
-R
-\
-N
 U = R N
 1
 \
+\
+U2
+=
+R
+N
 Abbildung 1.2: Zariski-Topologie auf R2
 Definition 7
 Sei X ein topologischer Raum, eine Äquivalenzrelation auf X, X = X/ sei die Menge
@@ -467,7 +467,7 @@ Beweis: „ “: Sei x X,ε > 0 gegeben und U := B (f(x)).
 ε
 ⇒ ∈
 Dann ist U offen in Y.
-=D =e =f. =1 =2.a f−1(U) ist offen in X. Dann ist x f−1(U).
+= D = e = f. = 1 = 2.a f−1(U) ist offen in X. Dann ist x f−1(U).
 ⇒ ∈
 δ > 0, sodass B (x) f−1(U)
 δ
@@ -551,7 +551,7 @@ Wird X Y mit der Produkttopologie versehen, so sind π und π stetig.
 X Y
 ×
 Beweis: Sei U X offen
-π−1(U) =⊆ U Y ist offen in X Y. (cid:4)
+π−1(U) = ⊆ U Y ist offen in X Y. (cid:4)
 ⇒ X × ×
 Bemerkung 12
 Sei X ein topologischer Raum, eine Äquivalenzrelation auf X, X = X/ der Bahnenraum
@@ -568,9 +568,9 @@ Beobachtung: Die Quotiententopologie ist die feinste Topologie, sodass π stetig
 Beispiel 14 (Stereographische Projektion)
 Rn und Sn N sind homöomorph für beliebiges N Sn. Es gilt:
 \{ } ∈
-Sn = (cid:8) x Rn+1 (cid:12) (cid:12) x = 1(cid:9)
+Sn = (cid:8) x Rn+1 (cid:12) (cid:12) x = 1 (cid:9)
 ∈ (cid:107) (cid:107)
-(cid:40) (cid:12) (cid:12) n (cid:88)+1 (cid:41)
+(cid:40) (cid:12) (cid:12) n (cid:88) +1 (cid:41)
 = x Rn+1 (cid:12) x2 = 1
 (cid:12) i
 ∈
@@ -580,8 +580,9 @@ i=1
 0
 .
 .
+O. B. d. A. sei N =
 ..
-O. B. d. A. sei N = Die Gerade durch N und P schneidet die Ebene H in genau
+Die Gerade durch N und P schneidet die Ebene H in genau
  
 0
 1
@@ -604,7 +605,7 @@ und P ist.
 x
 1
 .
-Sei P =   . .  , so ist x n+1 < 1, also ist L P nicht parallel zu H. Also schneiden sich L P
+Sei P =   . .   , so ist x n+1 < 1, also ist L P nicht parallel zu H. Also schneiden sich L P
 x
 n+1
 und H in genau einem Punkt Pˆ.
@@ -809,8 +810,11 @@ enthalten.
 Angenommen, es gibt kein solches δ. Dann gibt es für jedes n N ein Intervall I [0,1]
 n
 ∈ ⊆
-der Länge 1/n sodass I (cid:40) U für alle i J.
-n i
+der Länge 1/n sodass I
+n
+(cid:40) U
+i
+für alle i J.
 ∈
 Sei x der Mittelpunkt von I . Die Folge (x ) hat einen Häufungspunkt x [0,1]. Dann
 n n n
@@ -818,8 +822,13 @@ n n n
 gibt es i J mit x U . Da U offen ist, gibt es ein ε > 0, sodass (x ε,x+ε) U .
 i i i
 ∈ ∈ − ⊆
-Dann gibt es n 0, sodass gilt: 1/n0 < ε/2 und für unendlich viele3 n n : x x < ε/2, also
-0 n
+Dann gibt es n
+0
+, sodass gilt: 1/n0 < ε/2 und für unendlich viele3 n n
+0
+: x x
+n
+< ε/2, also
 ≥ | − |
 I (x ε,x+ε) U für mindestens ein n N.4
 n i
@@ -831,15 +840,23 @@ Dann überdecke [0,1] mit endlich vielen Intervallen I ,...,I der Länge δ. Jed
 U enthalten.
 ij
 U ,...,U ist endliche Teilüberdeckung von U. (cid:4)
+⇒
 j1 j
-⇒ d
+d
 Beispiel 16 (Kompakte Räume)
 1) R ist nicht kompakt.
 2) (0,1) ist nicht kompakt.
 (cid:83)
-U = (1/n,1 −1/n) n∈NU = (0,1)
-n n
+U
+n
+= (1/n,1
+−
+1/n)
 ⇒
+n∈N
+U
+n
+= (0,1)
 3) R mit der Zariski-Topologie ist kompakt und jede Teilmenge von R ist es auch.
 Bemerkung 19
 Sei X kompakter Raum, A X abgeschlossen. Dann ist A kompakt.
@@ -860,25 +877,35 @@ i
 n
 X kompakt (cid:91)
 ======= es gibt i ,...,i I, sodass U (X A) = X
-1 n ij
-⇒ ∈ ∪ \
+⇒
+1 n
+∈
+ij
+∪ \
 j=1
  
 n
 (cid:91)
- U ij ∪(X \A) ∩A = A
 ⇒
+ U ij
+∪
+(X
+\
+A)
+∩
+A = A
 j=1
 n
 (cid:91)
 (U A) ((X A) A) = A
+⇒
 ij
-⇒ ∩ ∪ \ ∩
+∩ ∪ \ ∩
 j=1(cid:124) (cid:123)(cid:122) (cid:125) (cid:124) (cid:123)(cid:122) (cid:125)
 =Vij =∅
 V ,...,V überdecken A.
-i1 in
 ⇒
+i1 in
 (cid:4)
 Bemerkung 20
 Seien X,Y kompakte topologische Räume. Dann ist X Y mit der Produkttopologie
@@ -906,19 +933,31 @@ U
 x,y
 Abbildung 1.7: Die blaue Umgebung ist Schnitt vieler Umgebungen
 Die offenen Mengen U V für festes x und alle y Y überdecken x y. Da Y
-x0,y x0,y 0 0
-× ∈ { }×
+x0,y
+×
+x0,y 0
+∈ {
+0
+}×
+kompakt ist, ist auch x Y kompakt. Also gibt es y ,...,y mit
 (cid:83)m(x0)
-kompakt ist, ist auch x Y kompakt. Also gibt es y ,...,y mit U
+U
 { 0 }× 1 m(x0) i=1 x0,yi ×
 V x Y.
-x0,yi 0
-⊇ { }×
-(cid:84)m(x) (cid:83)n
-Sei U := U . Da X kompakt ist, gibt es x ,...,x X mit U = X
+x0,yi
+⊇ {
+0
+}×
+Sei U :=
+(cid:84)m(x)
+U . Da X kompakt ist, gibt es x ,...,x X mit
+(cid:83)n
+U = X
 x0 i=1 x0,yi 1 n ∈ j=1 xj
-(cid:83)k (cid:83)m(xj)(cid:0) (cid:1)
-U V X Y
+(cid:83)k (cid:83)m(xj)(cid:0)
+U V
+(cid:1)
+X Y
 ⇒ j=1 i=1 xj,yi × xj,yi ⊇ ×
 (cid:124) (cid:123)(cid:122) (cid:125)
 Eingrün-orangesKästchen
@@ -938,8 +977,9 @@ i
 x
 K
 y
+Da K kompakt ist, gibt es endlich viele x ,...,x K, sodass
 (cid:83)m
-Da K kompakt ist, gibt es endlich viele x ,...,x K, sodass U K.
+U K.
 1 n ∈ i=1 xi ⊇
 n
 (cid:92)
@@ -950,8 +990,9 @@ i=1
 (cid:32) n (cid:33)
 (cid:91)
 V U =
+⇒ ∩
 xi
-⇒ ∩ ∅
+∅
 i=1
 V K =
 ⇒ ∩ ∅
@@ -967,15 +1008,15 @@ Ist K X kompakt, so ist f(K) Y kompakt.
 ⊆ ⊆
 Beweis: Sei (V ) offene Überdeckung von f(K)
 i i∈I
-=f =s =te =tig (f−1(V )) ist offene Überdeckung von K
+= f = s = te = tig (f−1(V )) ist offene Überdeckung von K
 i i∈I
 ⇒
-=K =o =m =p =akt es gibt i ,...,i , sodass f−1(V ),...,f−1(V ) Überdeckung von K ist.
+= K = o = m = p = akt es gibt i ,...,i , sodass f−1(V ),...,f−1(V ) Überdeckung von K ist.
+⇒
 1 n i1 in
-⇒
 f(f−1(V )),...,f(f−1(V )) überdecken f(K).
-i1 in
 ⇒
+i1 in
 Es gilt: f(f−1(V)) = V f(X) (cid:4)
 ∩
 Satz 1.1 (Heine-Borel)
@@ -1001,7 +1042,7 @@ kompakt. Genauso ist Z kompakt, weil
 z C z 1
 { ∈ (cid:107) | ≤ }
 homöomorph zu
-(cid:8) (x,y) R2 (cid:12) (cid:12) (x,y) 1(cid:9)
+(cid:8) (x,y) R2 (cid:12) (cid:12) (x,y) 1 (cid:9)
 ∈ (cid:107) (cid:107) ≤
 ist. (cid:4)
 1.6 Wege und Knoten
@@ -1046,8 +1087,7 @@ C = (C A ) (C A )
 ist Zerlegung in nichtleere, disjunkte, abgeschlossene Teilmengen Widerspruch
 ⇒
 (cid:110) (cid:12) (cid:111)
-b) Sei X = (x,y) R2 (cid:12) x2+y2 = 1 y = 1+2 e− 11 0x .
-(cid:12)
+b) Sei X = (x,y) R2 (cid:12) (cid:12) x2+y2 = 1 y = 1+2 e− 1 1 0 x .
 ∈ ∨ ·
 Abbildung 1.8a veranschaulicht diesen Raum.
 Sei U U = X,U = U = ,U offen. X = C S. Dann ist C U oder C U ,
@@ -1073,16 +1113,18 @@ Sei X ein topologischer Raum. Eine Jordankurve in X ist ein Homöomorphismus γ 
 → ⊆ → ⊆
 20 1.6.WEGEUNDKNOTEN
 1
+X
+0
+0.1 1
+1
+−
+(a) Spirale S mit Kreis C
+Y
 (x,sin(1)) X Y
 { x ∈ × }
 ( 1,1) Y
 − ⊆
-X
-0 Y
-0.1 1
-1
-−
-(a) Spirale S mit Kreis C (b) Sinus
+(b) Sinus
 Abbildung 1.8: Beispiele für Räume, die zusammenhängend, aber nicht wegzusammenhängend
 sind.
 (a) n=1 (b) n=2 (c) n=3 (d) n=4 (e) n=5
@@ -1132,8 +1174,7 @@ Definition 22
 Sei γ : [0,1] R3 ein Knoten, E eine Ebene und π : R3 E eine Projektion auf E.
 → →
 π heißt Knotendiagramm von γ, wenn gilt:
-(cid:12) (cid:12)π−1(x)(cid:12)
-(cid:12) 2 x π(γ)
+(cid:12) (cid:12)π−1(x) (cid:12) (cid:12) 2 x π(γ)
 ≤ ∀ ∈
 Ist (π )−1(x) = y ,y , so liegt y über y , wenn gilt:
 γ([0,1]) 1 2 1 2
@@ -1182,8 +1223,10 @@ a,b
 (c) Es gibt unendlich viele Primzahlen.
 Aufgabe 3 (Cantorsches Diskontinuum)
 Für jedes i N sei P := 0,1 mit der diskreten Topologie. Weiter Sei P := (cid:81) P .
-i i∈N i
-∈ { }
+∈
+i
+{ }
+i∈N i
 (a) Wie sehen die offenen Mengen von P aus?
 (b) Was können Sie über den Zusammenhang von P sagen?
 Aufgabe 4 (Kompaktheit)
@@ -1269,14 +1312,19 @@ U Rn
 i
 →
 (cid:18) (cid:19)
-x 0 x (cid:1)(cid:1)i x n
-(x : : x ) ,..., ,...,
+(x : : x ) x 0 ,..., x (cid:1) (cid:1)i ,..., x n
 0 n
-··· (cid:55)→ x (cid:1)x x
-i i i
-(y : : y : 1 : y : : y ) (y ,...,y )
-1 i−1 i n 1 n
+··· (cid:55)→ x
+i
+(cid:1)x
+i
+x
+i
+(y : : y : 1 : y : : y )
+1 i−1 i n
 ··· ··· → (cid:55)
+(y ,...,y )
+1 n
 ist bijektiv.
 Die U mit i = 0,...,n bilden einen n-dimensionalen Atlas:
 i
@@ -1289,7 +1337,7 @@ y = (0 : 1 : 1) U R2 y (0,1)
 Umgebung: B (0,1) (1 : u : v) (u,v) < 1 = V
 1 1
 → (cid:8){ |(cid:12)(cid:107) (cid:107) }(cid:9)
-Umgebung: B 1(0,1) (w : z : 1) (cid:12) w2+z2 < 1 = V 2
+Umgebung: B 1 (0,1) (w : z : 1) (cid:12) w2+z2 < 1 = V 2
 →
 V V = ?
 1 2
@@ -1303,7 +1351,7 @@ c = 0 und (a)2+(b)2 < 1 a < 1
 ⇒ (cid:54) c c ⇒ c
 Widerspruch
 ⇒
-4) Sn = (cid:8) x Rn+1 (cid:12) (cid:12) x = 1(cid:9) ist n-dimensionale Mannigfaltigkeit.
+4) Sn = (cid:8) x Rn+1 (cid:12) (cid:12) x = 1 (cid:9) ist n-dimensionale Mannigfaltigkeit.
 ∈ (cid:107) (cid:107)
 Karten:
 D := (x ,...,x ) Sn x > 0 B (0,...,0)
@@ -1313,7 +1361,17 @@ i 1 n+1 i 1
 C := (x ,...,x ) Sn x < 0 B (0,...,0)
 i 1 n+1 i 1
 { ∈ | } →
-(x 1,...,x n+1) (x 1,...,(cid:26)x(cid:26) i,...,x n+1)1
+(x
+1
+,...,x
+n+1
+) (x
+1
+,...,(cid:26)x(cid:26)
+i
+,...,x
+n+1
+)1
 (cid:55)→ (cid:113) (cid:113)
 (x ,...,x ) (x ,...,x , 1 (cid:80)n x2,x ,...,x ), oder 1 (cid:80)n x2 für C
 1 n (cid:55)→ 1 i−1 − k=1 k i n − − k=1 k i
@@ -1326,12 +1384,12 @@ ist.
 1x wird rausgenommen
 i
 27 2.1.TOPOLOGISCHEMANNIGFALTIGKEITEN
-6) V 1 = (cid:8) (x,y) R2 (cid:12) (cid:12) x y = 0(cid:9) ist keine Mannigfaltigkeit.
+6) V 1 = (cid:8) (x,y) R2 (cid:12) (cid:12) x y = 0 (cid:9) ist keine Mannigfaltigkeit.
 ∈ ·
 Das Problem ist (0,0). Wenn man diesen Punkt entfernt, zerfällt der Raum in 4
 Zusammenhangskomponenten. Jeder Rn zerfällt jedoch in höchstens zwei Zusammen-
 hangskomponenten, wenn man einen Punkt entfernt.
-7) V 2 = (cid:8) (x,y) R2 (cid:12) (cid:12) x3 = y2(cid:9) ist eine Mannigfaltigkeit.
+7) V 2 = (cid:8) (x,y) R2 (cid:12) (cid:12) x3 = y2 (cid:9) ist eine Mannigfaltigkeit.
 ∈
 8) X = (R 0 ) (0 ,0 )
 1 2
@@ -1406,22 +1464,26 @@ G : U Rn, u (g(u),u) eine stetige Abbildung auf eine offene Umgebung V von x
 in X ist.
 (cid:4)
 Beispiel 22
-1) F : R3 R, (x,y,z) x2+y2+z2 1,V(F) = S2,grad(F) = (2x,2y,2z) =B =e =m =. =2 =7.b
+1) F : R3 R, (x,y,z) x2+y2+z2 1,V(F) = S2,grad(F) = (2x,2y,2z) = B = e = m = . = 2 = 7.b
 → (cid:55)→ − ⇒
 Sn ist n-dimensionale Mannigfaltigkeit in Rn+1
 2) F : R2 R, (x,y) y2 x3 Es gilt: grad(F) = ( 3x2,2y). Also: grad(0,0) = (0,0).
 → (cid:55)→ − −
+100
+0
+100 −
+4 −
+2 −
+y 0 2 4 5 4 3 2 1 0 x − 1 − 2 − 3 − 4 − 5
+z
 y
 10
-100 5
-z
-0
+5
 x
-−100 2 4 6 8 10 12
-f(x,y) −4 5
-−2 − a= 31
-100
-−0 100 y 0 2 4 5 4 3 2 1 0 x −1 −2 −3 −4 −5 −10 a a= =1 2
+2 4 6 8 10 12
+f(x,y) 5
+− a= 1 100 3
+a=1 0 10 a=2 − 100 −
 (a) F(x,y)=y2−x3 (b) y2−ax3 =0
 Abbildung 2.2: Rechts ist die Neilsche Parabel für verschiedene Parameter a.
 DaheristBemerkung27.bnichtanwendbar,aberV(F)isttrotzdemeine1-dimensionale
@@ -1435,8 +1497,12 @@ i i i i
 ϕ ein Homöomorphismus auf eine offene Teilmenge von
 i
 Rn := (x ,...,x ) Rn x 0
-+,0 1 n n
-{ ∈ | ≥ }
++,0
+{
+1 n
+∈ |
+n
+≥ }
 ist.
 Rn ist ein „Halbraum“.
 +,0
@@ -1557,9 +1623,9 @@ F
 ∃ → ∩ ∀ ∈
 F heißt (lokale) reguläre Parametrisierung von S.
 F(u,v) = (x(u,v),y(u,v),z(u,v))
-∂x(p) ∂x(p)
+∂x(p) ∂x(p) 
 ∂u ∂v
-J F(u,v) =  ∂∂ uy (p) ∂ ∂y v(p)
+J F (u,v) =  ∂ ∂ u y (p) ∂ ∂ y v (p)
 ∂z(p) ∂z(p)
 ∂u ∂v
 Beispiel 24
@@ -1568,10 +1634,9 @@ Beispiel 24
 →
 F : R2 R3 (u,v) (r(u)cos(u),r(v)sin(u),v)
 → (cid:55)→
- r(cid:48)(v)cosu
-r(v)sinu
+ r(v)sinu r(cid:48)(v)cosu 
 −
-J F(u,v) =  r(v)cosu r(cid:48)(v)sinu
+J F (u,v) =  r(v)cosu r(cid:48)(v)sinu
 0 1
 hat Rang 2 für alle (u,v) R2.
 ∈
@@ -1583,8 +1648,8 @@ Es gilt: F(u,v) S2, denn
 ∈ R
 R2cos2(v)cos2(u)+R2cos2(v)sin2(u)+R2sin2(v)
 =R2(cos2(v)cos2(u)+cos2(v)sin2(u)+sin2(v))
-=R2(cid:0) cos2(v)(cos2(u)+sin2(u))+sin2(v)(cid:1)
-=R2(cid:0) cos2(v)+sin2(v)(cid:1)
+=R2(cid:0) cos2(v)(cos2(u)+sin2(u))+sin2(v) (cid:1)
+=R2(cid:0) cos2(v)+sin2(v) (cid:1)
 =R2
 32 2.2.DIFFERENZIERBAREMANNIGFALTIGKEITEN
 N
@@ -1617,7 +1682,7 @@ Die Jacobi-Matrix
  
 Rcosvsinu Rsinvcosu
 − −
-J F(u,v) =  Rcosvcosu Rsinvsinu
+J F (u,v) =  Rcosvcosu Rsinvsinu
 −
 0 Rcosv
 hat Rang 2 für cosv = 0. In N und S ist cosv = 0.
@@ -1641,10 +1706,12 @@ s
 F F
 i j
 U i U j
-F j−1◦Fi
+F
+j
+−1◦Fi
 Abbildung 2.5: Reguläre Fläche S zum Beweis von Bemerkung 31
 Idee: Finde differenzierbare Funktion F(cid:103)−1 in Umgebung W von s, sodass F(cid:103)−1 = F−1.
-j j |S∩W j
+j j | S∩W j
 Ausführung: Sei u U , v U mit F (u ) = s = F (v ).
 0 i 0 j i 0 j 0
 ∈ ∈
@@ -1657,30 +1724,44 @@ det ∂u ∂v (v ) = 0
 ∂u ∂v
 und F (u,v) = (x(u,v),y(u,v),z(u,v)).
 j
-Definiere F(cid:102)j : U R R3 durch
+Definiere F(cid:102)j : U
 j
+R R3 durch
 × →
-F(cid:102)j(u,v,t) := (x(u,v),y(u,v),z(u,v)+t)
-Offensichtlich: F(cid:102)j = F
-|Uj×{0} j
-∂x ∂x 0
+F(cid:102)j (u,v,t) := (x(u,v),y(u,v),z(u,v)+t)
+Offensichtlich: F(cid:102)j
+|
+Uj×{0}
+= F
+j
+∂x ∂x 0 
 ∂u ∂v
-J =  ∂∂ uy ∂ ∂y 0 detJ F(cid:102)j(v 0,0) (cid:54)= 0
-F(cid:102)j v ⇒
+J F(cid:102)j =  ∂ ∂ u y ∂ ∂ y v 0 ⇒ detJ F(cid:102)j (v 0 ,0) (cid:54) = 0
 ∂z ∂z 1
 ∂u ∂v
 AnalysisII
-====== Es gibt Umgebungen W von F von F(cid:102)j(v 0,0) = F j(v 0) = s, sodass F(cid:102)j auf W eine
+====== Es gibt Umgebungen W von F
 j
-differen⇒ zierbar Inverse F−1 hat.
+von F(cid:102)j (v
+0
+,0) = F
+j
+(v
+0
+) = s, sodass F(cid:102)j auf W eine
+differen ⇒ zierbar Inverse F−1 hat.
 j
 34 2.2.DIFFERENZIERBAREMANNIGFALTIGKEITEN
 Weiter gilt:
-F(cid:102)j−1
-= F j−1
-|W∩S |W∩S
+F(cid:102)j
+−1
+| W∩S
+= F
+j
+−1
+| W∩S
 F−1 F = F−1 F
-⇒ j ◦ i |F i−1(W∩S) j ◦ i |F i−1(W∩S)
+⇒ j ◦ i |F i −1(W∩S) j ◦ i |F i −1(W∩S)
 ist differenzierbar.
 Definition 33
 Sei G eine Mannigfaltigkeit und (G, ) eine Gruppe.
@@ -1747,7 +1828,7 @@ v v ,...,v v sind linear unabhängig.
 1 0 k 0
 ⇔ − −
 (cid:110) (cid:12) (cid:111)
-b) conv(v ,...,v ) := (cid:80)k λ v (cid:12) λ 0,(cid:80)k λ = 1 heißt die konvexe Hülle von
+b) conv(v ,...,v ) := (cid:80)k λ v (cid:12) λ 0, (cid:80)k λ = 1 heißt die konvexe Hülle von
 0 k i=0 i i (cid:12) i ≥ i=0 i
 v ,...,v .
 0 k
@@ -1762,8 +1843,11 @@ b) FürPunktev ,...,v imRn inallgemeinerLageheißt∆(v ,...,v ) = conv(v ,...,v
 0 k 0 k 0 k
 ein k-Simplex in Rn.
 c) Ist ∆(v ,...,v ) ein k-Simplex und I = i ,...,i 0,...,k , so ist s :=
-0 k 0 r i0,...,ir
-{ } ⊆ { }
+0 k
+{
+0 r
+} ⊆ { }
+i0,...,ir
 conv(v ,...,v ) ein r-Simplex und heißt Teilsimplex oder Seite von ∆.
 i0 ir
 (a) 0-Simplex ∆0
@@ -1876,8 +1960,8 @@ Beweis: ∆n ist die konvexe Hülle von (e ,...,e ) in Rn+1. Jede (k+1)-elementi
 0 n
 von e ,...,e definiert ein k-Simplex.
 0 n
-a{ (∆n) = (cid:0)n+} 1(cid:1) , k = 0,...,n
-⇒ χk (∆n) = (cid:80)k n+1 ( 1)k(cid:0)n+1(cid:1)
+a { (∆n) = (cid:0)n+ } 1(cid:1) , k = 0,...,n
+⇒ χ k (∆n) = (cid:80) k n +1 ( 1)k(cid:0)n+1(cid:1)
 ⇒ k=0 − k+1
 Binomischer
 f(x) = (x+1)n+1 Leh=rsatz (cid:80)n+1(cid:0)n+1(cid:1) xk
@@ -1994,8 +2078,7 @@ und C (K) der R-Vektorraum mit Basis A (K), d. h.
 n n
  (cid:12) 
 (cid:12)
- (cid:88) (cid:12) R
-C n(K) = c σ σ (cid:12) c σ
+C n (K) =  (cid:88) c σ σ (cid:12) (cid:12) c σ R 
 · (cid:12) ∈
  
 σ∈An(K) (cid:12)
@@ -2082,8 +2165,11 @@ n n n n n+1 n
 ⊆ ⊆
 a) H = H (K,R) := Z /B heißt n-te Homologiegruppe von K.
 n n n n
-b) b n(K) := dimRH heißt n-te Betti-Zahl von K.
+b) b
 n
+(K) := dimRH
+n
+heißt n-te Betti-Zahl von K.
 Bemerkung 38
 Nach Bemerkung 37 ist B Z , denn d (C) Kern(d ) für C C .
 n n n+1 n n+1
@@ -2313,8 +2399,7 @@ nach c.
 Sind γ γ(cid:48) und γ γ(cid:48), so ist γ γ γ(cid:48) γ(cid:48).
 1 ∼ 1 2 ∼ 2 1 ∗ 2 ∼ 1∗ 2
 48 3.2.FUNDAMENTALGRUPPE
-γ 1(cid:48) γ 1 γ
-2
+γ 1 (cid:48) γ 1 γ 2
 a c
 b
 γ(cid:48)
@@ -2352,7 +2437,9 @@ r : S1 R S1 0 = S1
 × → ×{ }
 mit
 r(x,y) := (x,0)
-eine Abbildung. r ist eine Retraktion, da r |S1 ∼= id S1.
+eine Abbildung. r ist eine Retraktion, da r
+|
+S1 ∼ = id S1 .
 ι r : S1 R S1 R
 ◦ × → ×
 (x,y) (x,0)
@@ -2388,9 +2475,9 @@ d) Inverses Element [γ]−1 = [γ] = [γ(1 t)], denn γ γ γ γ γ
 0
 − ∗ ∼ ∼ ∗
 Beispiel 32
-1) S1 = z C z = 1 = (cid:8) (cosϕ,sinϕ) R2 (cid:12) (cid:12) 0 ϕ 2π(cid:9)
+1) S1 = z C z = 1 = (cid:8) (cosϕ,sinϕ) R2 (cid:12) (cid:12) 0 ϕ 2π (cid:9)
 { ∈ | | | } ∈ ≤ ≤
-π 1(S1,1) = (cid:8) [γk] (cid:12) (cid:12) k Z(cid:9) ∼= Z. Dabei ist γ(t) = e2πit = cos(2πt)+isin(2πt) und
+π 1 (S1,1) = (cid:8) [γk] (cid:12) (cid:12) k Z(cid:9) ∼ = Z. Dabei ist γ(t) = e2πit = cos(2πt)+isin(2πt) und
 ∈
 γk := γ γ
 (cid:124) ∗·(cid:123)·(cid:122)·∗ (cid:125)
@@ -2491,9 +2578,9 @@ b) (g f) ([γ]) = [(g f) γ] = [g (f γ)] = g ([f γ]) = g (f ([γ])) = (g f )([
 ∗ ∗ ∗ ∗ ∗ ∗
 ◦ ◦ ◦ ◦ ◦ ◦ ◦
 Beispiel 33
-1) f : S1 (cid:44) R2 ist injektiv, aber f ∗ : π 1(S1,1) ∼= Z π 1(R2,1) = e ist nicht injektiv.
+1) f : S1 (cid:44) R2 ist injektiv, aber f ∗ : π 1 (S1,1) ∼ = Z π 1 (R2,1) = e ist nicht injektiv.
 → → { }
-2) f : R S1,t (cos2πt,sin2πt)istsurjektiv,aberf ∗ : π 1(R,0) = e π 1(S1,1) ∼=
+2) f : R S1,t (cos2πt,sin2πt)istsurjektiv,aberf ∗ : π 1 (R,0) = e π 1 (S1,1) ∼ =
 → (cid:55)→ { } →
 Z ist nicht surjektiv.
 51 3.2.FUNDAMENTALGRUPPE
@@ -2509,8 +2596,14 @@ Beweis: Sei g : Y X die Umkehrabbildung, d. h. g ist stetig und f g = id , g f =
 Y X
 → ◦ ◦
 f g = (f g) = (id ) = id und g f = id .
-∗ ∗ ∗ Y ∗ π1(Y,f(X) ∗ ∗ π1(X,x)
-⇒ ◦ ◦ ◦
+⇒
+∗
+◦
+∗
+◦
+∗ Y ∗ π1(Y,f(X) ∗
+◦
+∗ π1(X,x)
 Definition 47
 Seien X,Y topologische Räume, x X,y Y,f,g : X Y stetig mit f(x ) = y = g(x ).
 0 0 0 0 0
@@ -2558,7 +2651,7 @@ f g = id , g f : R2 R2, x 0 für alle x.
 ⇒ ◦ ◦ → (cid:55)→
 g f id R2 mit Homotopie: H : R2 I R2,H(x,s) = (1 s)x (stetig!)
 ◦ ∼ × → −
-H(x,0) = x = id R2(x), H(x,1) = 0, H(0,s) = 0 s I.
+H(x,0) = x = id R2 (x), H(x,1) = 0, H(0,s) = 0 s I.
 ⇒ ∀ ∈
 Satz 3.1 (Satz von Seifert und van Kampen „light“)
 Sei X ein topologischer Raum, U,V X offen mit U V = X und U V wegzusam-
@@ -2581,8 +2674,22 @@ i i i+1 i i 0 i
 ∈ ∩ ∈ ∩ ∩ ⇒
 homotop zu
 γ σ σ γ σ σ γ mit γ := γ
-(cid:124)1 (cid:125)1 ∗(cid:124)1 ∗(cid:123)(cid:122)2 (cid:125)2 n−1 2 i |Ii
-(cid:123)∗(cid:122) ∗ ∗···∗ ∗
+(cid:124)
+1
+(cid:123)∗(cid:122) (cid:125)
+1
+∗(cid:124)
+1
+∗(cid:123)(cid:122)
+2
+∗ (cid:125)
+2
+∗···∗
+n−1
+∗
+2 i
+|
+Ii
 inU inV
 a b
 x
@@ -2613,7 +2720,8 @@ sodass p−1(U) disjunkte Vereinigung von offenen Teilmengen V Y ist (j I) und
 j
 ⊆ ∈
 p : V U ein Homöomorphismus ist.
-|Vj j
+|
+Vj j
 →
 I heißt Grad der Überlagerung p und man schreibt:
 | |
@@ -2653,13 +2761,21 @@ Abbildung 3.11: R2 T2 = R2/Z2
 Bemerkung 50
 Überlagerungen sind surjektiv.
 Beweis: Sei p : Y X eine Überlagerung und x X beliebig. Dann existiert eine offene
-Umgebung U(x)→ X und offene Teilmengen V ∈ X mit p−1(U) = (cid:83)˙ V und p : V U
-j j |Vj j
-⊆ ⊆ →
+Umgebung U(x) → X und offene Teilmengen V ∈ X mit p−1(U) = (cid:83)˙ V und p : V U
+⊆
+j
+⊆
+j
+|
+Vj j
+→
 ist Homöomorphismus.
 D. h. es existiert ein y V , so dass p (y) = x. Da x X beliebig war und ein y Y
-j |Vj
-∈ ∈ ∈
+∈
+j
+|
+Vj
+∈ ∈
 existiert, mit p(y) = x, ist p surjektiv. (cid:4)
 54 3.3.ÜBERLAGERUNGEN
 z2
@@ -2684,8 +2800,9 @@ i
 → ∈ { } →
 z C z = 1 Abbildungen.
 { ∈ | (cid:107) (cid:107) }
-1) f := idR ist eine offene und stetige Abbildung.
+1) f
 1
+:= idR ist eine offene und stetige Abbildung.
 2) g(x) := e2πix ist eine offene, aber keine stetige Abbildung (vgl. Abbildung 1.5).
 3) f (x) := 42 ist eine stetige, aber keine offene Abbildung.
 2
@@ -2736,11 +2853,15 @@ j1 j2
 die y bzw. y enthält.
 1 2
 Dann ist V = V , weil beide ein Element aus p−1(x) enthalten.
-j1 j2
+j1
 (cid:54)
+j2
 V V = nach Voraussetzung.
-j1 j2
-⇒ ∩ ∅
+⇒
+j1
+∩
+j2
+∅
 2. Fall: p(y ) = p(y ).
 1 2
 (cid:54)
@@ -2757,10 +2878,13 @@ i i Y i i i j
 Die V existieren wegen der Definition einer Überlagerung: p heißt Überlagerung
 i
 : x X U = U(x) T : p−1(U) = (cid:83)˙ V und p ist Homöomorphismus.
-⇔ ∀ ∈ ∃ ∈ X Vi∈TY i |Vi
+⇔ ∀ ∈ ∃ ∈ X Vi∈TY i | Vi
 (p )−1(x) = y
-|Vi i
-⇒ { }
+⇒ |
+Vi
+{
+i
+}
 Alle y liegen diskret in Y, da Häufungspunkte unendlich viele Elemente in jeder
 i
 ⇒
@@ -2780,7 +2904,7 @@ Beweis: Sei U Umgebung von x wie in Definition 48, x U. Dann enthält jedes V mi
 genau ein Element von p−1(x).
 p−1(x) ist konstant für x U
 ⇒ | | ∈
-=X ==zh =gd. p−1(x) ist konstant für x X.
+= X == zh = gd. p−1(x) ist konstant für x X.
 ⇒ | | ∈
 Definition 51
 Es seien X,Y,Z topologische Räume, p : Y X eine Überlagerung und f : Z X stetig.
@@ -2841,10 +2965,11 @@ Sei p : Y X Überlagerung, γ : I X ein Weg, y Y mit p(y) = γ(0) =: x.
 Dann gibt es genau einen Weg γ˜ : I Y mit γ˜(0) = y und p γ˜ = γ.
 → ◦
 p : Y X Überlagerung, X,Y wegzusammenhängend. p stetig und surjektiv, zu x X
-Umgeb→ ung U, so dass p−1(U) = (cid:83) V ∈ ∃
+Umgeb → ung U, so dass p−1(U) = (cid:83) V ∈ ∃
 j
 p : V U Homöomorphismus.
-|Vj j
+|
+Vj j
 →
 Bemerkung 55
 Wege in X lassen sich zu Wegen in Y liften.
@@ -2883,7 +3008,7 @@ s
 Da p−1(b) diskrete Teilmenge von Y ist
 b˜ = H˜(1,s) = H˜(1,0) s I
 s
-⇒ b˜ = b˜ und H˜ ist Hom∀ oto∈ pie zwischen γ˜ und γ˜. (cid:4)
+⇒ b˜ = b˜ und H˜ ist Hom ∀ oto ∈ pie zwischen γ˜ und γ˜. (cid:4)
 0 1 0 1
 ⇒
 Folgerung 3.4
@@ -2897,8 +3022,9 @@ b) [π (X,x ) : p (π (Y,y ))] = deg(p)
 1 0 ∗ 1 0
 Beweis:
 a) Sei γ˜ ein Weg in Y um y und p ([γ˜]) = e, also p γ˜ γ
-0 ∗ x0
+0 ∗
 ◦ ∼
+x0
 Nach Proposition 3.3 ist dann γ˜ homotop zum Lift des konstanten Wegs γ mit
 x0
 Anfangspunkt y , also zu γ [γ˜] = e
@@ -2990,8 +3116,8 @@ z 0
 ⇒ ∗
 p˜(u) V
 ⇒ ∈
-p−˜1(W)
 Z
+p−˜1(W)
 ⇒ ⊆
 p˜ist stetig
 ⇒
@@ -3016,11 +3142,12 @@ p : X˜ X mit (g f)(x˜) = x˜.
 0 0
 → ◦
 Da auch id diese Eigenschaft hat, folgt mit Bemerkung 53: g f = id .
-x˜ X˜
+x˜
 ◦
+X˜
 Analog gilt f g = id . (cid:4)
-Y˜
 ◦
+Y˜
 Die Frage, wann es eine universelle Überlagerung gibt, beantwortet der folgende Satz:
 Definition 53
 Sei (X,T) ein topologischer Raum und x X.
@@ -3041,8 +3168,9 @@ sei U eine einfach zusammenhängende Umgebung von x und
 U˜ = U˜(x,[γ]) := (y,[γ α]) y U,α Weg in U von x nach y
 { ∗ | ∈ }
 p ist Überlagerung: p : U˜ U bijektiv. p ist stetig und damit p ein Homöomorphismus.
-|U˜ |U˜
+|U˜
 →
+|U˜
 Sind γ ,γ Wege von x nach x und γ γ , so ist U˜(x,[γ ]) U˜(x,[γ ]) = , denn: Ist
 1 2 0 1 2 1 2
 ∼ ∩ ∅
@@ -3164,8 +3292,17 @@ g◦f g f
 =p
 Satz 3.2 Bem. 57.c
 ρ ist injektiv: ρ(f) = e p(γ ) γ ==== γ γ f(x ) = x˜ ====== f =
-f x0 f x˜0 0 0
-• ⇒ ∼ ⇒ ∼ ⇒ ⇒
+• ⇒
+f
+∼
+x0
+⇒
+f
+∼
+x˜0
+⇒
+0 0
+⇒
 id .
 x˜
 ρ ist surjektiv: Sei [γ] π (X,x ), γ˜ Lift von γ nach x˜ mit Anfangspunkt x˜. Der
@@ -3204,7 +3341,7 @@ n
 ∈
 g = f . Damit folgt:
 n
-Deck(R/S1) = f n n Z ∼= Z
+Deck(R/S1) = f n n Z ∼ = Z
 { | ∈ }
 Nach Satz 3.8 also π (S1) = Deck(R/S1) = Z
 1 ∼ ∼
@@ -3267,7 +3404,13 @@ g−1
 ◦
 = g−1 (g x)
 ◦ ◦
-Def. =55 (. gb−1
+Def.
+=
+55
+(
+.
+g
+b−1
 g) x
 · ◦
 = 1 x
@@ -3293,8 +3436,14 @@ definiert durch (cid:37)(g)(X) = g x g G,x X, also (cid:37)(g) = m .
 g
 · ∀ ∈ ∈
 (cid:37) ist Homomorphismus: (cid:37)(g g ) = m = m m = (cid:37)(g ) (cid:37)(g ), denn für x X :
-1 2 g1·g2 g1 g2 1 2
-· ◦ ◦ ∈
+1
+·
+2 g1·g2 g1
+◦
+g2 1
+◦
+2
+∈
 (cid:37)(g g )(x) = (g g ) x = g (g x) = (cid:37)(g )((cid:37)(g )(x)) = ((cid:37)(g ) (cid:37)(g ))(x)
 1 2 1 2 1 2 1 2 1 2
 · · ◦ ◦ ◦ ◦
@@ -3331,7 +3480,7 @@ Dann operiert π (X,x ) auf X˜ durch Homöomorphismen wie folgt:
 1 0
 Für [γ] π (X,x ) und x˜ X˜ sei [γ] x˜ = γ˜(cid:37)(1) wobei γ˜ ein Weg von x˜ nach x˜ in X˜
 1 0 0
-sei, (cid:37) :=∈ p(δ˜) = p δ. ∈ ◦ ∗
+sei, (cid:37) := ∈ p(δ˜) = p δ. ∈ ◦ ∗
 ◦
 (cid:93)
 Also: δ ist ein Weg in X von x nach x = p(x˜) und γ δ die Liftung von γ δ mit
@@ -3341,7 +3490,7 @@ Anfangspunkt x˜.
 0
 [γ] x˜ hängt nicht von der Wahl von γ˜ ab; ist γ˜(cid:48) ein anderer Weg von x˜ nach x˜, so sind δ˜
 0
-und· δ˜(cid:48) homotop, also auch γ(cid:93) δ und γ(cid:93) δ(cid:48) homotop.
+und · δ˜(cid:48) homotop, also auch γ (cid:93) δ und γ (cid:93) δ(cid:48) homotop.
 ∗ ∗
 Gruppenoperation, denn:
 i) [e] x˜ = e(cid:103)δ = x˜
@@ -3349,8 +3498,19 @@ i) [e] x˜ = e(cid:103)δ = x˜
 (cid:94)
 ii) γ γ δ(1) = [γ γ ] x˜ = ([γ ] [γ ]) x˜
 1 2 1 2 1 2
-∗ ∗ ]∗ ˜◦ [γ∗ ([γ◦
-γ γ δ(1) = [γ (γ δ)(1) = ] ] x˜)
+γ
+∗
+γ
+∗
+δ(1) = [γ ]
+∗
+(γ
+˜◦
+δ)(1) = [γ
+∗
+] ([γ
+◦
+] x˜)
 1 2 1 2 1 2
 ∗ ∗ ◦ ∗ ◦ ◦
 Erinnerung:Die Konstruktion aus Bemerkung 59 induziert zu der Gruppenoperation π (X,x )
@@ -3530,7 +3690,7 @@ Dann gilt: PB+ AQ =
 ∩ (cid:54) ∅
 Auch Bemerkung 61 lässt sich umgangssprachlich sehr viel einfacher ausdrücken: Die Diagonalen
 eines konvexen Vierecks schneiden sich.
-Beweis: Sei P(cid:48) PQ−,P(cid:48) = P =S =at =z =4.1 PB schneidet AP(cid:48) AQ
+Beweis: Sei P(cid:48) PQ−,P(cid:48) = P = S = at = z = 4.1 PB schneidet AP(cid:48) AQ
 ∈ (cid:54) ⇒ ∪
 Sei C der Schnittpunkt. Dann gilt:
 1Die„Verschiebung“ vonP(cid:48)Q(cid:48) nachPQunddieIsometrie,diezusätzlichanderGeradedurchP undQspiegelt.
@@ -3566,7 +3726,7 @@ Annahme: A = B
 Dann ist B / (PA QA) wegen §2.
 ∈ ∪
 1. Fall: Q und B liegen in derselben Halbebene bzgl. PA
-=B =e =m =. =61 PB+ AQ = .
+= B = e = m = . = 61 PB+ AQ = .
 ⇒ ∩ (cid:54) ∅
 Sei C der Schnittpunkt vom PB und AQ.
 Dann gilt:
@@ -3688,9 +3848,9 @@ Beweis: Sei ϕ die Isometrie mit ϕ(A(cid:48)) = A, ϕ(A(cid:48)C(cid:48)+) = AC
 Isometrie existiert wegen Punkt §4.
 C ϕ(A(cid:48)C(cid:48)+) und B ϕ(A(cid:48)B(cid:48)+).
 ⇒ ∈ ∈
-d(A(cid:48),C(cid:48)) = d(ϕ(A(cid:48)),ϕ(C(cid:48))) = d(A,ϕ(C(cid:48))) =3 =(i) ϕ(C(cid:48)) = C
+d(A(cid:48),C(cid:48)) = d(ϕ(A(cid:48)),ϕ(C(cid:48))) = d(A,ϕ(C(cid:48))) = 3 = (i) ϕ(C(cid:48)) = C
 ⇒
-d(A(cid:48),B(cid:48)) = d(ϕ(A(cid:48)),ϕ(B(cid:48))) = d(A,ϕ(B(cid:48))) =3 =(i) ϕ(B(cid:48)) = B
+d(A(cid:48),B(cid:48)) = d(ϕ(A(cid:48)),ϕ(B(cid:48))) = d(A,ϕ(B(cid:48))) = 3 = (i) ϕ(B(cid:48)) = B
 ⇒
 Also gilt insbesondere ϕ( A(cid:48)B(cid:48)C(cid:48)) = ABC. (cid:4)
 (cid:52) (cid:52)
@@ -3746,7 +3906,7 @@ R
 R(cid:48)
 2
 Q R
-P R 1(cid:48) R 1
+P R 1 (cid:48) R 1
 (a) ∠R(cid:48)P(cid:48)R(cid:48) istkleinerals∠R PR ,(b) Innenwinkel und Außenwin-
 1 2 1 2
 vgl. Definition 61.c kel in (cid:52)PQR, vgl. Definiti-
@@ -3828,9 +3988,9 @@ Sei α ein Innenwinkel von .
 Beh.: Es gibt ein Dreieck (cid:48) mit IWS( (cid:48)) = IWS( ) und einem Innenwinkel α(cid:48) α.
 (cid:52) (cid:52) (cid:52) ≤ 2
 Dann gibt es für jedes n ein mit IWS( ) = IWS( ) und Innenwinkel α(cid:48) α . Für
-(cid:52)n (cid:52)n (cid:52) ≤ 2n
+(cid:52) n (cid:52) n (cid:52) ≤ 2n
 α < ε ist dann die Summe der beiden Innenwinkel um größer als π Widerspruch
-2n (cid:52)n ⇒
+2n (cid:52) n ⇒
 zu Folgerung 4.4.
 Beweis: Es seien A,B,C X und das Dreieck mit den Eckpunkten A,B,C und α sei
 ∈ (cid:52)
@@ -3910,7 +4070,11 @@ h
 a
 c
 L C A B A B
-(a) 1/2·|AB|·|h c| (b) 1/2·|BC|·|h a|
+(a) 1/2·|AB|·|h
+c
+| (b) 1/2·|BC|·|h
+a
+|
 Abbildung 4.15: Flächenberechnung im Dreieck
 Zu zeigen: Unabhängigkeit von der gewählten Grundseite.
 C
@@ -3923,7 +4087,7 @@ C
 Abbildung 4.16: ABL und CL B sind ähnlich, weil IWS = π
 a C
 (cid:52) (cid:52)
-=S =tr =a =hl =en =s =atz a = c a h = c h
+= S = tr = a = hl = en = s = atz a = c a h = c h
 ⇒ hc ha → · a · c
 Satz 4.7 (Satz des Pythagoras)
 Im rechtwinkligen Dreieck gilt a2+b2 = c2, wobei c die Hypotenuse und a,b die beiden
@@ -4011,7 +4175,7 @@ Q Q
 4.3 Hyperbolische Geometrie
 Definition 63
 Sei
-H := z C (z) > 0 = (cid:8) (x,y) R2 (cid:12) (cid:12) y > 0(cid:9)
+H := z C (z) > 0 = (cid:8) (x,y) R2 (cid:12) (cid:12) y > 0 (cid:9)
 { ∈ | (cid:61) } ∈
 79 4.3.HYPERBOLISCHEGEOMETRIE
 die obere Halbebene bzw. Poincaré-Halbebene und G = G G mit
@@ -4064,7 +4228,7 @@ y y
 2
 1 1 Z 1
 (Z )
-1 0 0 1 2(cid:60) 1 3 4 5 x 1 0 0 1 2 3 4 5 x
+1 0 0 1 2 (cid:60) 1 3 4 5 x 1 0 0 1 2 3 4 5 x
 − −
 (a) Fall 1 (b) Fall 2
 Abbildung 4.20: Zwei Punkte liegen in der hyperbolischen Geometrie immer auf genau einer
@@ -4100,8 +4264,9 @@ i j
 „ “: A H ,B H : AB g =
 1 2
 ⇐ ∈ ∈ ∩ (cid:54) ∅
-Da dH stetig ist, folgt diese Richtung direkt. Alle Punkte in H haben einen Abstand
+Da dH stetig ist, folgt diese Richtung direkt. Alle Punkte in H
 1
+haben einen Abstand
 von m der kleiner ist als r und alle Punkte in H haben einen Abstand von m der
 2
 größer ist als r. Da man jede Strecke von A nach B insbesondere auch als stetige
@@ -4165,8 +4330,9 @@ d) SL (R) wird von den Matrizen
 0 λ−1 0 1 1 0 ∈
 −
 (cid:124) (cid:123)(cid:122) (cid:125) (cid:124) (cid:123)(cid:122) (cid:125) (cid:124) (cid:123)(cid:122) (cid:125)
-=:A =:Bt =:C
+=:A
 λ
+=:Bt =:C
 erzeugt.
 e) PSL (R) operiert auf G.
 2
@@ -4188,8 +4354,9 @@ a(x+iy)+b
 axcx+axd+bcx+bd+aycy (ad bc)y
 = +i −
 (cx+d)2+(cy)2 (cx+d)2+(cy)2
-SL =2(R) ac(x2+y2)+adx+bcx+bd y
+SL =2(R) ac(x2+y2)+adx+bcx+bd
 +i
+y
 (cx+d)2+(cy)2 (cx+d)2+(cy)2
 y
 (σ(z)) = > 0
@@ -4201,19 +4368,19 @@ z = = x+iy = z
 0 1 ◦ 1
 82 4.3.HYPERBOLISCHEGEOMETRIE
 und
-(cid:18) a b(cid:19) (cid:18)(cid:18) a(cid:48) b(cid:48)(cid:19) (cid:19) (cid:18) a b(cid:19) a(cid:48)z+b(cid:48)
+(cid:18) a b (cid:19) (cid:18)(cid:18) a(cid:48) b(cid:48)(cid:19) (cid:19) (cid:18) a b (cid:19) a(cid:48)z+b(cid:48)
 z =
 c d ◦ c(cid:48) d(cid:48) ◦ c d ◦ c(cid:48)z+d(cid:48)
 aa(cid:48)z+b(cid:48)
 +b
-c(cid:48)z+d(cid:48)
 =
+c(cid:48)z+d(cid:48)
 ca(cid:48)z+b(cid:48)
 +d
 c(cid:48)z+d(cid:48)
 a(a(cid:48)z+b(cid:48))+b(c(cid:48)z+d(cid:48))
-c(cid:48)z+d(cid:48)
 =
+c(cid:48)z+d(cid:48)
 c(a(cid:48)z+b(cid:48))+d(c(cid:48)z+d(cid:48))
 c(cid:48)z+d(cid:48)
 a(a(cid:48)z+b(cid:48))+b(c(cid:48)z+d(cid:48))
@@ -4226,14 +4393,14 @@ c(a(cid:48)z+b(cid:48))+d(c(cid:48)z+d(cid:48))
 = z
 ca(cid:48)+db(cid:48) cb(cid:48)+dd(cid:48)
 ◦
-(cid:18)(cid:18) a b(cid:19) (cid:18) a(cid:48) b(cid:48)(cid:19)(cid:19)
+(cid:18)(cid:18) a b (cid:19) (cid:18) a(cid:48) b(cid:48)(cid:19)(cid:19)
 = z
 c d · c(cid:48) d(cid:48) ◦
 b) Es gilt σ(z) = ( σ)(z) für alle σ SL (R) und z H.
 2
 − ∈ ∈
 (cid:18) (cid:19)
-c) Ansatz: σ = a b σ(x ) = ax0+b =! 0 ax +b = 0 b = ax
+c) Ansatz: σ = a b σ(x ) = ax0+b = ! 0 ax +b = 0 b = ax
 c d 0 cx0+d ⇒ 0 ⇒ − 0
 σ(x ) = cx +d = 0 d = cx
 ∞ ∞ ∞
@@ -4244,8 +4411,8 @@ c d 0 cx0+d ⇒ 0 ⇒ − 0
 a(x x ) = c(x x ) c = a x1−x0
 1 − 0 1 − ∞ ⇒ x1−x∞
 a2 x x1−x0 +a2x x1−x0 = 1
-∞x1−x∞ 0x1−x∞
 ⇒ − ·
+∞x1−x∞ 0x1−x∞
 a2 x1−x0 (x x ) = 1 a2 = x1−x∞
 ⇒ x0−x∞ 0 − ∞ ⇒ (x1−x∞)(x1−x0)
 d) Es gilt:
@@ -4283,8 +4450,13 @@ Fall 2: a = 0
 Nun wird in M durch M A an der Stelle von a eine 1 erzeugt:
 1
 · a
-(cid:18) b(cid:19) (cid:18)1 0(cid:19) (cid:18) ab(cid:19)
-a 1
+(cid:18)
+a b
+(cid:19) (cid:18)1
+0
+(cid:19) (cid:18)
+1 ab
+(cid:19)
 a =
 c d · 0 a c ad
 a
@@ -4325,7 +4497,7 @@ m+ir
 0
 m λ2m x
 0 1 0 1 2 3 4
-1 0 1 2 3m+1 4 5 6 7 x −
+1 0 1 2 3 m+1 4 5 6 7 x −
 −
 (a) Fall 1 (b) Fall 2 (Strahlensatz)
 Abbildung 4.22: Beweis von Proposition 4.9 (e) für eine Diagonalmatrix
@@ -4364,8 +4536,16 @@ Seien z ,z ,z ,z C paarweise verschieden.
 Dann heißt
 z1−z4
 (z z ) (z z )
-z1−z2 1 4 3 2
-DV(z ,z ,z ,z ) := = − · −
+DV(z ,z ,z ,z ) :=
+z1−z2
+=
+1
+−
+4
+·
+3
+−
+2
 1 2 3 4 z3−z4 (z z ) (z z )
 z3−z2 1 − 2 · 3 − 4
 Doppelverhältnis von z ,...,z .
@@ -4449,8 +4629,11 @@ Durch Einsetzen ergibt sich DV(z ,...,z ) = 1.
 Im Fall, dass ein z = ist, ist entweder DV(0,1, ,z ) = 0 oder DV(0,1, ,z )
 i 4 4
 ∞ ∞ ∞ ±∞
-(0−z4)·(∞−1) z4·(∞−1)
-e) DV(0,1, ,z ) = = = z
+e) DV(0,1, ,z ) =
+(0−z4)·(∞−1)
+=
+z4·(∞−1)
+= z
 ∞ 4 (0−1)·(∞−z4) ∞−z4 4
 f) Wenn jemand diesen Beweis führt, bitte an info@martin-thoma.de schicken.
 g) Sei σ PSL (C) mit σ(z ) = 0, σ(z ) = 1, σ(z ) = . Ein solches σ existiert, da man
@@ -4471,16 +4654,35 @@ Behauptung folgt, weil σ−1(R ) ein Kreis oder eine Gerade in C ist.
 ∪∞
 Definition 66
 Für z ,z H sei g die eindeutige hyperbolische Gerade durch z und z und a ,a die
-1 2 z1,z2 1 2 1 2
+1 2
 ∈
+z1,z2 1 2 1 2
 „Schnittpunkte“ von g mit R .
 z1,z2
 ∪{∞}
-Dann sei dH(z 1,z 2) := 21 |lnDV(a 1,z 1,a 2,z 2) und heiße hyperbolische Metrik.
+Dann sei dH(z
+1
+,z
+2
+) :=
+2
+1
 |
+lnDV(a
+1
+,z
+1
+,a
+2
+,z
+2
+)
+|
+und heiße hyperbolische Metrik.
 Beh.: Für z ,z H sei g die eindeutige hyperbolische Gerade durch z und z und a ,a
-1 2 z1,z2 1 2 1 2
+1 2
 ∈
+z1,z2 1 2 1 2
 die „Schnittpunkte“ von g mit R .
 z1,z2
 ∪{∞}
@@ -4663,8 +4865,11 @@ t t
 n(t) = cos , sin
 − r − r
 da gilt:
-(cid:28)(cid:18) t(cid:19) (cid:18) t(cid:19)(cid:29)
-cos sin
+(cid:28)(cid:18)
+cos
+t(cid:19) (cid:18)
+sin
+t(cid:19)(cid:29)
 n(t),γ(cid:48)(t) = − r , − r
 (cid:104) (cid:105) sin t cos t
 − r r
@@ -4680,7 +4885,7 @@ t t
 = ( cos )2+( sin )2
 − r − r
 = 1
-det(γ(cid:48)(t),n(t)) = (cid:13) (cid:13) (cid:13)(cid:18) −sin rt −cos rt(cid:19)(cid:13) (cid:13) (cid:13)
+det(γ(cid:48)(t),n(t)) = (cid:13) (cid:13) (cid:13) (cid:18) − sin r t − cos r t(cid:19)(cid:13) (cid:13) (cid:13)
 1 (cid:13) cos t sin t (cid:13)
 r − r
 t t t
@@ -4712,7 +4917,7 @@ c) b(t)seieinVektor,derγ(cid:48)(t),n(t)zueinerorientiertenOrthonormalbasisvonR
 Also gilt:
 det(γ(cid:48)(t),n(t),b(t)) = 1
 b(t) heißt Binormalenvektor, die Orthonormalbasis
-(cid:8) γ(cid:48)(t),n(t),b(t)(cid:9)
+(cid:8) γ(cid:48)(t),n(t),b(t) (cid:9)
 heißt begleitendes Dreibein.
 Bemerkung 72 (Eigenschaften von Kurven II)
 Sei γ : I R3 durch Bogenlänge parametrisierte Kurve.
@@ -4722,7 +4927,7 @@ b) b(t) aus Definition 70.c ist eindeutig.
 5.2 Tangentialebene
 Erinnerung Sie sich an Definition 32 „reguläre Fläche“.
 Äquivalent dazu ist: S ist lokal von der Form
-V(f) = (cid:8) x R3 (cid:12) (cid:12) f(x) = 0(cid:9)
+V(f) = (cid:8) x R3 (cid:12) (cid:12) f(x) = 0 (cid:9)
 ∈
 für eine C∞-Funktion f : R3 R.
 →
@@ -4734,9 +4939,9 @@ s V:
 (u,v) (x(u,v),y(u,v),z(u,v))
 (cid:55)→
 Für p = F−1(s) U sei
-∈ ∂x(p) ∂x(p)
+∈ ∂x(p) ∂x(p) 
 ∂u ∂v
-J F(p) =  ∂∂ uy (p) ∂ ∂y v(p)
+J F (p) =  ∂ ∂ u y (p) ∂ ∂ y v (p)
 ∂z(p) ∂z(p)
 ∂u ∂v
 und D F : R2 R3 die durch J (p) definierte lineare Abbildung.
@@ -4785,7 +4990,7 @@ sodass γ(cid:48)(0) = x gilt. Da γ(t) S für alle t [ ε,ε], ist f γ = 0
 T S grad(f)(s)⊥
 s
 ⇒ ⊆
-=d =i =m ==2 T S = (grad(f)(s))⊥
+= d = i = m = =2 T S = (grad(f)(s))⊥
 s
 ⇒
 Definition 72
@@ -4892,18 +5097,29 @@ Nor 2
 −
 5
 4
-2
 3
-0 z z
 2
-1 −2
-0 f(x,y)
-42
 1
-2 1
-0 0 0
-y −1 −1.5 −1 −0.5 0 x 0.5 1 1.5 −− 42 y −1 −2−2 −1.5 −1 −0.5 0 x 0.5 1 1.5 2
-(a) S =V(X2+Z2−1) (b) S =V(X2−Y2−Z)
+0
+1
+0
+y − 1 − 1.5 − 1 − 0.5 0 x 0.5 1 1.5
+z
+2
+0
+2 −
+2
+1
+0
+y − 1 − 2− 2 − 1.5 − 1 − 0.5 0 x 0.5 1 1.5 2
+(a) S =V(X2+Z2−1)
+z
+f(x,y)
+4
+2
+0
+2 − 4 −
+(b) S =V(X2−Y2−Z)
 Abbildung 5.2: Beispiele für reguläre Flächen
 Definition 74
 Sei S R3 eine reguläre Fläche, s S und n ein stetiges Normalenfeld auf S.
@@ -4912,8 +5128,9 @@ Sei S R3 eine reguläre Fläche, s S und n ein stetiges Normalenfeld auf S.
 − →
 γ(cid:48)(cid:48)(0) = 0.
 (cid:54)
+Sei n(0) :=
 γ(cid:48)(cid:48)(0)
-Sei n(0) := . Zerlege
+. Zerlege
 (cid:107)γ(cid:48)(cid:48)(0)(cid:107)
 n(0) = n(0)t+n(0)⊥ mit n(0)t T S und n(0)⊥ (T S)⊥
 s s
@@ -4934,7 +5151,7 @@ Nor Nor
 | |
 Bemerkung 77
 Sei S eine reguläre Fläche und n = n(s) ein Normalenvektor an S in s.
-Sei T s1S = x T sS x = 1 ∼= S1. Dann ist
+Sei T s 1S = x T s S x = 1 ∼ = S1. Dann ist
 { ∈ | (cid:107) (cid:107) }
 κn (s) : T1S R, x κ (s,x)
 Nor s Nor
@@ -4944,9 +5161,9 @@ Nor
 Definition 75
 Sei S eine reguläre Fläche und n = n(s) ein Normalenvektor an S in s.
 94 5.3.GAUSS-KRÜMMUNG
-a) κn(s) : = min(cid:8) κn (s,x) (cid:12) (cid:12) x T1S (cid:9) und heißen Hauptkrümmungen von S in s.
+a) κn(s) : = min (cid:8) κn (s,x) (cid:12) (cid:12) x T1S (cid:9) und heißen Hauptkrümmungen von S in s.
 1 Nor ∈ s
-κn(s) : = max(cid:8) κn (s,x) (cid:12) (cid:12) x T1S (cid:9)
+κn(s) : = max (cid:8) κn (s,x) (cid:12) (cid:12) x T1S (cid:9)
 2 Nor ∈ s
 b) K(s) := κn(s) κn(s) heißt Gauß-Krümmung von S in s.
 1 · 2
@@ -5000,8 +5217,9 @@ S
 ∈
 (cid:18) (cid:19) (cid:18) (cid:19)
 g (s) g (s) E(s) F(s)
+I : =
 1,1 1,2
-I : = =
+=
 S
 g (s) g (s) F(s) G(s)
 1,2 2,2
@@ -5030,20 +5248,43 @@ i,j
 Bemerkung 81
 (cid:13) (cid:13)2
 (cid:13)∂F ∂F (cid:13)
-det(I S) = (cid:13) (p) (p)(cid:13)
+det(I S ) = (cid:13) (p) (p)(cid:13)
 (cid:13)∂u × ∂u (cid:13)
 1 2
    
 x y
 1 1
-Beweis: Sei ∂∂ uF 1(p) = x 2, ∂∂ uF 2(p) = y 2
+Beweis: Sei
+∂
+∂
+u
+F
+1
+(p) = x 2,
+∂
+∂
+u
+F
+2
+(p) = y 2
 x y3
 3
  
 z
 1
-Dann ist ∂∂ uF 1(p) ∂∂ uF 2(p) = z 2 mit
-×
+Dann ist
+∂
+∂
+u
+F
+1
+(p)
+× ∂
+∂
+u
+F
+2
+(p) = z 2 mit
 z
 3
 z = x y x y
@@ -5061,9 +5302,10 @@ z = x y x y
 1 2
 96 5.4.ERSTEUNDZWEITEFUNDAMENTALFORM
 det(I ) = g g g2
-S 1,1 2,2 1,2
+S 1,1 2,2
 −
-(cid:42) x   x  (cid:43)(cid:42) y   y  (cid:43) (cid:42) x   y  (cid:43)2
+1,2
+(cid:42)  x   x  (cid:43)(cid:42)  y   y  (cid:43) (cid:42)  x   y  (cid:43)2
 1 1 1 1 1 1
 = x 2,x 2 y 2,y 2 x 2,y 2
 −
@@ -5098,19 +5340,21 @@ Etwa:
 (cid:90) n (cid:90)
 (cid:88)
 fdA = fdA
-S Vi
+S
 i=1
+Vi
 (cid:90)
 (cid:88)
 fdA
 −
-Vi∩Vj
 i(cid:54)=j
+Vi∩Vj
 (cid:90)
 (cid:88)
 + fdA
+i,j,k
 Vi∩Vj∩V
-i,j,k k
+k
 ...
 −
 Beweis:
@@ -5153,8 +5397,9 @@ Aufgrund der Bilinearität des Skalarproduktes genügt es diese Eigenschaft für
 Basisvektoren zu zeigen.
 Sei x = D F(e ) = ∂F (p) i = 1,2
 i p i ∂ui
+Beh.: x ,d n(x ) =
 ∂2F
-Beh.: x ,d n(x ) = (p),d n(x )
+(p),d n(x )
 (cid:104) i s j (cid:105) (cid:104)∂ui∂uj s i (cid:105)
 ∂2F
 (p),d n(x ) = x ,d n(x )
@@ -5163,15 +5408,17 @@ Beh.: x ,d n(x ) = (p),d n(x )
 Bew.: 0 = (p+te ),n(p+te )
 j j
 (cid:104)∂u (cid:105)
-(cid:18) (cid:19)(cid:12)
-d ∂F
+d
+(cid:18)
+∂F
+(cid:19)(cid:12)
 0 = (p+te ),n(p+te ) (cid:12)
 j j (cid:12)
 ⇒ dt (cid:104)∂u (cid:105) t=0
 d ∂F (cid:12)
 = (p+te )(cid:12) ,n(s) + x ,d nD F(e )
 j (cid:12) i s p j
-(cid:104)dt∂u i t=0 (cid:105) (cid:104) (cid:124) (cid:123)(cid:122) (cid:125)(cid:105)
+(cid:104)dt∂u i t=0 (cid:105) (cid:104) (cid:124) (cid:123)(cid:122) (cid:125) (cid:105)
 (cid:124) (cid:123)(cid:122) (cid:125) xj
 ∂2F
 (p)
@@ -5189,7 +5436,8 @@ Bezüglich der Basis x ,x von T S hat II die Darstellungsmatrix
 1 2 s s
 { }
 ∂2F
-(h(s)
+(h
+(s)
 ) mit h (s) = (p),n(s)
 i,j i,j=1,2 i,j (cid:104)∂u ∂u (cid:105)
 i j
@@ -5251,9 +5499,9 @@ s 1 2
 = λ cos2ϕ(λ λ ) λ
 2 2 1 2
 − − ≤
-=P =r =op =. =5.2 λ 1 = min(cid:8) κ Nor(s,x) (cid:12) (cid:12) x T s1S (cid:9)
+= P = r = op = . = 5.2 λ 1 = min (cid:8) κ Nor (s,x) (cid:12) (cid:12) x T s 1S (cid:9)
 ⇒ ∈
-λ 2 = max(cid:8) κ Nor(s,x) (cid:12) (cid:12) x T s1S (cid:9)
+λ 2 = max (cid:8) κ Nor (s,x) (cid:12) (cid:12) x T s 1S (cid:9)
 ∈
 Satz 5.5 (Satz von Gauß-Bonnet)
 Sei S R3 eine kompakte orientierbare reguläre Fläche. Dann gilt:
@@ -5322,7 +5570,7 @@ Bew.: durch Widerspruch
 Annahme: Es gibt nur endlich viele Primzahlen p P
 ∈
 Dann ist
-Z 1,+1 FSd.A =rithmetik (cid:91) U
+Z 1,+1 FSd.A = rithmetik (cid:91) U
 0,p
 \{− }
 p∈P
@@ -5383,7 +5631,7 @@ n
 ⇒
 (b) Beh.: SL (R) ist nicht kompakt, für n > 1 ist SL (R) kompakt.
 1 n
-Bew.: Für SL 1(R) gilt: SL 1(R) = (cid:8) A R1×1 (cid:12) (cid:12) detA = 1(cid:9) = (cid:0) 1(cid:1) ∼= 1 . 22 SL 1(R)
+Bew.: Für SL 1 (R) gilt: SL 1 (R) = (cid:8) A R1×1 (cid:12) (cid:12) detA = 1 (cid:9) = (cid:0) 1 (cid:1) ∼ = 1 . 22 SL 1 (R)
 ∈ { } ⇒
 ist kompakt.
 102 LösungenderÜbungsaufgaben
@@ -5405,7 +5653,7 @@ m . (cid:4)
 −m−−→−∞→ ∞
 (c) Beh.: (R) ist kompakt.
 P
-Bew.: (R) ∼= Sn/ x∼−x. Per Definition der Quotiententopologie ist die Klassenabbil-
+Bew.: (R) ∼ = Sn/ x∼−x . Per Definition der Quotiententopologie ist die Klassenabbil-
 P
 dung stetig. Da Sn als abgeschlossene und beschränkte Teilmenge des Rn+1 kompakt
 ist 22 (R) ist kompakt. (cid:4)
@@ -5421,8 +5669,11 @@ g ,g G : ϕ(g g ) = ϕ(g ) ϕ(g )
 ∀ ∈ ∗ ◦
 gilt.
 Es folgt direkt:
-1) Sei X = R mit der Standarttopologie und ϕ : idR und R = (R,+). Dann ist ϕ ein
-1 1
+1) Sei X = R mit der Standarttopologie und ϕ
+1
+: idR und R = (R,+). Dann ist ϕ
+1
+ein
 Gruppenhomomorphismus und ein Homöomorphismus.
 2) Sei G = (Z,+) und H = (Z/3Z,+). Dann ist ϕ : G H,x x mod 3 ein
 2
@@ -5520,8 +5771,9 @@ Isometrie ϕ mit ϕ(B) = C und ϕ(C) = B und ϕ(A) = A.
 ⇒ ∃
 ϕ(∠ABC) = ∠ACB
 ⇒
-∠ABC ∠ACB (cid:4)
+∠ABC
 =
+∠ACB (cid:4)
 ∼
 ⇒
 (b) Beh.: Der längeren Seite von ABC liegt der größere Winkel gegenüber und umge-
@@ -5532,7 +5784,7 @@ Bew.: Sei d(A,C) > d(A,B). Nach §3 (i) gibt es C(cid:48) AC+ mit d(A,C(cid:48))
 C(cid:48) liegt zwischen A und C.
 ⇒
 Es gilt (cid:93)ABC(cid:48) < (cid:93)ABC und aus Aufgabe 9 (a) folgt: (cid:93)ABC(cid:48) = (cid:93)AC(cid:48)B.
-∠BC(cid:48)A ist ein nicht anliegender Außenwinkel zu ∠BCA =B =e =m =. =66 (cid:93)BC(cid:48)A > (cid:93)BCA
+∠BC(cid:48)A ist ein nicht anliegender Außenwinkel zu ∠BCA = B = e = m = . = 66 (cid:93)BC(cid:48)A > (cid:93)BCA
 ⇒
 (cid:93)BCA < (cid:93)BC(cid:48)A = (cid:93)ABC(cid:48) < (cid:93)ABC Sei umgekehrt (cid:93)ABC > (cid:93)BCA, kann
 ⇒
@@ -5697,7 +5949,7 @@ Seien a,b R3 Vektoren.
 a a a b a b
 1 1 2 3 3 2
 −
-a b := b 3 b 3 = a 3b 1 a 1b 3
+a b := b 3 b 3 = a 3 b 1 a 1 b 3
 × × −
 a a a b a b
 3 3 1 2 2 1
@@ -5741,11 +5993,11 @@ B
 AB Strecke mit Endpunkten A und B Atlas
 ABC Dreieck mit Eckpunkten A,B,C A Projektiver Raum
 (cid:52)
-AB ∼= CD Die Strecken AB und CD sind P , Skalarprodukt
+AB ∼ = CD Die Strecken AB und CD sind P , Skalarprodukt
 isometrisch (cid:104)· ·(cid:105)
 X/ X modulo
 ∼
-K Geometrische Realisierung des [x] Äquivalenzk∼ lassen von x bzgl.
+K Geometrische Realisierung des [x] Äquivalenzk ∼ lassen von x bzgl.
 | | ∼
 Simplizialkomplexes K x Norm von x ∼
 (cid:107) (cid:107)
@@ -5789,14 +6041,18 @@ Zahlenmengen
 N = 1,2,3,... Natürliche Zahlen
 { }
 Z = N 0, 1, 2,... Ganze Zahlen
-Q = Z∪{(cid:8) 1,− 1, 2−(cid:9) = (cid:8)} z mit z Z und n Z 0 (cid:9) Rationale Zahlen
-R = Q∪ (cid:8) √2 23 , 3 √3 3,...n (cid:9) Reel∈ e Zahlen ∈ \{ }
+Q = Z ∪{(cid:8) 1, − 1, 2 −(cid:9) = (cid:8)} z mit z Z und n Z 0 (cid:9) Rationale Zahlen
+R = Q ∪ (cid:8) √ 2 2 3 , 3 √3 3,... n (cid:9) Reel ∈ e Zahlen ∈ \{ }
 ∪ −
 R Echt positive reele Zahlen
 +
 Rn := (x ,...,x ) Rn x 0 Halbraum
-+,0 1 n n
-{ ∈ | ≥ }
++,0
+{
+1 n
+∈ |
+n
+≥ }
 R× = R 0 Einheitengruppe von R
 \{ }
 C = a+ib a,b R Komplexe Zahlen

@@ -162,7 +162,7 @@ if __name__ == "__main__":
             version=tika.__version__,
             dependencies="Apache Tika",
             license="Apache v2",
-            last_release_date="2023-01-01",
+            last_release_date="2025-03-26",
         ),
         "pypdf": Library(
             "pypdf",
@@ -172,7 +172,7 @@ if __name__ == "__main__":
             version=pypdf.__version__,
             watermarking_function=pypdf_watermarking,
             license="BSD 3-Clause",
-            last_release_date="2023-08-26",
+            last_release_date="2025-06-29",
             image_extraction_function=pypdf_image_extraction,
         ),
         "pdfminer": Library(
@@ -182,7 +182,7 @@ if __name__ == "__main__":
             text_extraction_function=lambda n: pdfminder_extract_text(BytesIO(n)),
             version=pdfminer.__version__,
             license="MIT/X",
-            last_release_date="2022-11-05",
+            last_release_date="2025-05-06",
             image_extraction_function=pdfminer_image_extraction,
         ),
         "pdfplumber": Library(
@@ -192,7 +192,7 @@ if __name__ == "__main__":
             text_extraction_function=pdfplubmer_get_text,
             version=pdfplumber.__version__,
             license="MIT",
-            last_release_date="2023-07-29",
+            last_release_date="2025-06-12",
             dependencies="pdfminer.six",
         ),
         "pymupdf": Library(
@@ -205,7 +205,7 @@ if __name__ == "__main__":
             image_extraction_function=pymupdf_image_extraction,
             dependencies="MuPDF",
             license="GNU AFFERO GPL 3.0 / Commerical",
-            last_release_date="2023-08-24",
+            last_release_date="2025-06-12",
         ),
         "pdftotext": Library(
             "pdftotext",
@@ -218,16 +218,16 @@ if __name__ == "__main__":
             last_release_date="-",
             license="GPL",
         ),
-        "borb": Library(
-            "Borb",
-            "borb",
-            "https://pypi.org/project/borb/",
-            text_extraction_function=borb_get_text,
-            version="2.1.16",
-            watermarking_function=None,
-            license="AGPL/Commercial",
-            last_release_date="2023-06-23",
-        ),
+        # "borb": Library(
+        #     "Borb",
+        #     "borb",
+        #     "https://pypi.org/project/borb/",
+        #     text_extraction_function=borb_get_text,
+        #     version="2.1.16",
+        #     watermarking_function=None,
+        #     license="AGPL/Commercial",
+        #     last_release_date="2023-06-23",
+        # ),
         "pdfium": Library(
             "pypdfium2",
             "pdfium",
@@ -237,7 +237,7 @@ if __name__ == "__main__":
             watermarking_function=None,
             image_extraction_function=pdfium_image_extraction,
             license="Apache-2.0 or BSD-3-Clause",
-            last_release_date="2023-07-04",
+            last_release_date="2024-12-19",
             dependencies="PDFium (Foxit/Google)",
         ),
         "pdfrw": Library(

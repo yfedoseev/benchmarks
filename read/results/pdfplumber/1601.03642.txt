@@ -23,17 +23,16 @@ This paper gives a high level overview of how they are created tionϕisapplied.
 and gives some examples. It is meant to be a summary of the
 current work and give people who are new to machine learning Fig. 1: Neural networks are based on simple units which get
 some starting points. combined to complex networks.
-I. INTRODUCTION This means that machine learning programs adjust internal 6102
+I. INTRODUCTION This means that machine learning programs adjust internal
 parameters to fit the data they are given. Those computer
 According to [Gad06] creativity is “the ability to use your programs are still developed by software developers, but the
 imagination to produce new ideas, make things etc.” and developer writes them in a way which makes it possible to
-imagination is “the ability to form pictures or ideas in your adjust them without having to re-program everything. Machine naJ
+imagination is “the ability to form pictures or ideas in your adjust them without having to re-program everything. Machine
 mind”. learning programs should generally improve when they are fed
 with more data.
-Recentadvancesinmachinelearningproduceresultswhichthe 21
+Recentadvancesinmachinelearningproduceresultswhichthe
 author would intuitively call creative. A high-level overview The field of machine learning is related to statistics. Some
 over several of those algorithms are described in the following. algorithms directly try to find models which are based on well-
-]VC.sc[
 known distribution assumptions of the developer, others are
 This paper is structured as follows: Section II introduces the
 more general.
@@ -41,7 +40,7 @@ reader on a very simple and superficial level to machine
 learning, Section III gives examples of creativity with images, A common misunderstanding of people who are not related
 Section IV gives examples of machines producing textual in this field is that the developers don’t understand what their
 content, and Section V gives examples of machine learning machine learning program is doing. It is understood very well
-and music. A discussion follows in Section VI. in the sense that the developer, given only a pen, lots of paper 1v24630.1061:viXra
+and music. A discussion follows in Section VI. in the sense that the developer, given only a pen, lots of paper
 and a calculator could calculate the same result as the machine
 doeswhenhegetsthesamedata.Andlotsoftime,ofcourse.It
 II. BASICSOFMACHINELEARNING
@@ -79,6 +78,11 @@ i
 ence E with respect to some class of tasks T and optimization technique called gradient descent. The gradient
 performance measure P, if its performance at tasks descent algorithm takes a function which has to be derivable,
 inT,asmeasuredbyP,improveswithexperienceE. starts at any point of the surface of this error function and
+6102
+naJ
+21
+]VC.sc[
+1v24630.1061:viXra
 2
 makes a step in the direction which goes downwards. Hence
 it tries to find a minimum of this high-dimensional function.

@@ -6244,13 +6244,13 @@ ELU
 
 88.93 % σ = 0.46 85.35 % σ = 0.21
 
-84.46 % σ = 0.27
-
 84.46 % σ = 0.23
 
-88.61 % σ = 0.41
+84.46 % σ = 0.27
 
 88.00 % σ = 0.47
+
+88.61 % σ = 0.41
 
 Softplus
 
@@ -6324,11 +6324,11 @@ ELU
 
 75.5
 
-83.2
-
 78.8
 
 80.1
+
+83.2
 
 67.2
 
@@ -8596,10 +8596,10 @@ Springer, 2003, vol. 53. [Online]. Available: https://dx.doi.org/10.1007/978-3-
 S. E. Fahlman, “An empirical study of learning speed in back-propagation
 http://repository.cmu.edu/cgi/
 
+[Online]. Available:
+
 networks,”
 viewcontent.cgi?article=2799&context=compsci
-
-[Online]. Available:
 
 1988.
 

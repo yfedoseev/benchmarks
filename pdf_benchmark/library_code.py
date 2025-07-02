@@ -8,8 +8,8 @@ import pdfminer
 import pdfplumber
 import pypdf
 import pypdfium2 as pdfium
-from borb.pdf.pdf import PDF
-from borb.toolkit.text.simple_text_extraction import SimpleTextExtraction
+# from borb.pdf import PDF
+# from borb.toolkit import SimpleTextExtraction
 from pdfminer.high_level import extract_pages
 from requests import ReadTimeout
 

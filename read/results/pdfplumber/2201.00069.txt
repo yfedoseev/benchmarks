@@ -4,22 +4,19 @@ and transient emission associated with three localised FRBs
 J. O. Chibueze,1,2★ M. Caleb,3,4† L. Spitler,5 H. Ashkar,6,17 F. Schüssler,6 B. W. Stappers,4
 C. Venter,1 I. Heywood,7,8,9 A. M. S. Richards,3 D. R. A. Williams,3 M. Kramer,3,5
 R. Beswick,3 M. C. Bezuidenhout,3 R. P. Breton,3 L. N. Driessen,3 F. Jankowski,3
-E. F. Keane,10 M. Malenta,3 M. Mickaliger,3 V. Morello3, H. Qiu,11 K. Rajwade,3 1202
+E. F. Keane,10 M. Malenta,3 M. Mickaliger,3 V. Morello3, H. Qiu,11 K. Rajwade,3
 S. Sanidas,3 M. Surnis,3 T. W. Scragg,3 C. R. H. Walker,5 and N. Wrigley,3
-ceD
 H.E.S.S. Collaboration: F. Aharonian,12,13,14 F. Ait Benkhali,15 E.O. Angüner,16 M. Backes,18,1
 V. Baghmanyan,19 V. Barbosa Martins,20 R. Batzofin,21 Y. Becherini,22,23 D. Berge,20
-13
 M. Böttcher,1 C. Boisson,24 J. Bolmont,25 M. de Bony de Lavergne,26 M. Breuhaus,13
 R. Brose,12 F. Brun,6 T. Bulik,27 F. Cangemi,25 S. Caroff,25 S. Casanova,19
-]EH.hp-ortsa[
 J. Catalano,28 M. Cerruti,22 T. Chand,1 A. Chen,21 O.U. Chibueze,1
 G. Cotter,29 P. Cristofari,24 J. Damascene Mbarubucyeye,20 J. Devin,30 A. Djannati-Ataï,22
 A. Dmytriiev,1 K. Egberts,31 J.-P. Ernenwein,16 A. Fiasson,26 G. Fichet de Clairfontaine,24
 G. Fontaine,17 S. Funk,28 S. Gabici,22 S. Ghafourizadeh,15 G. Giavitto,20
 D. Glawion,28 M.-H. Grondin,30 M. Hörbe,29 C. Hoischen,31 T. L. Holch,20
 Zhiqiu Huang,13 M. Jamrozy,32 F. Jankowsky,15 I. Jung-Richardt,28 E. Kasai,18
-K. Katarzyński,33 U. Katz,28 B. Khélifi,22 W. Kluźniak,34 Nu. Komin,21 1v96000.1022:viXra
+K. Katarzyński,33 U. Katz,28 B. Khélifi,22 W. Kluźniak,34 Nu. Komin,21
 K. Kosack,6 D. Kostunin,20 A. Lemière,22 J.-P. Lenain,25 F. Leuschner,35
 T. Lohse,36 A. Luashvili,24 I. Lypova,15 J. Mackey,12 D. Malyshev,35
 V. Marandon,13 P. Marchegiani,21 A. Marcowith,37 G. Martí-Devesa,38 R. Marx,15
@@ -38,6 +35,11 @@ M. Zacharias,24,1 D. Zargaryan,12,14 A.A. Zdziarski,34 A. Zech,24 S.J. Zhu,20
 S. Zouari,22 N. Żywucka,1
 MNRAS000,1–15(2021)
 AcceptedXXX.ReceivedYYY;inoriginalformZZZ
+1202
+ceD
+13
+]EH.hp-ortsa[
+1v96000.1022:viXra
 MNRAS000,1–15(2021) Preprint4January2022 CompiledusingMNRASLATEXstylefilev3.0
 ABSTRACT
 Wereportonasearchforpersistentradioemissionfromtheone-offFastRadioBurst(FRB)
@@ -101,8 +103,9 @@ ing" (Zhang 2018) and interactions of neutron stars with active
 sive spiral galaxy at 𝑧 = 0.0337±0.0002 (Marcote et al. 2020)
 galacticnuclei(Vieyroetal.2017)(seePlattsetal.(2019)foralist
 showednoassociatedpersistentradioemission.Thisplacesastrong
-ofpotentialprogenitors).Someofthesemodelspredictradioafter- upperlimitonthepersistentsourceluminosityof𝜈𝐿 (cid:46)7.6×1035
+ofpotentialprogenitors).Someofthesemodelspredictradioafter- upperlimitonthepersistentsourceluminosityof𝜈𝐿
 𝜈
+(cid:46)7.6×1035
 glowsaccompanyinganFRBwithtimescalesofdaystoyears.Liu ergs−1 at1.6GHz,whichisthreeordersofmagnitudelowerthan
 etal.(2016)proposethatthemergerofaKerr-Newmanblackhole
 thatofFRB20121102A.Recently,theCHIME/FRBcollaboration
@@ -210,8 +213,93 @@ MERLIN array in the United Kingdom (project code: CY10003)
 showers(deNaurois&Rolland2009).
 on 13 January, 2021 (see Section 3.1.2). Six antennas were used
 Wedefineacircularregion-of-interestcenteredontheposition
-i tn recl wud ai sn Rg .Ath .e =75 1- 2m 1L 5o 𝑚v 5e 5ll .t 1e 2le ,s Dco ep ce .=an −d 1t 3h ◦e 01ta (cid:48)r 1g 5e (cid:48).t (cid:48)7p .o 1in 4t 0in 7g +2c 8e 2n 7- ofFRB20171019Awitharadiusof0.12◦,optimalforapoint-like
-ℎ 𝑠
+i
+t
+n
+re
+cl
+w
+ud
+a
+i
+s
+n
+R
+g
+.A
+th
+.
+e
+=
+75
+1
+-
+2
+m
+ℎ 1
+L
+5
+o
+𝑚
+v
+5
+e
+5
+ll
+𝑠 .
+t
+1
+e
+2
+le
+,
+s
+D
+co
+e
+p
+c
+e
+.=
+an
+−
+d
+1
+t
+3
+h
+◦
+e
+01
+ta
+(cid:48)
+r
+1
+g
+5
+e
+(cid:48).
+t
+(cid:48)7
+p
+.
+o
+1
+in
+4
+t
+0
+in
+7
+g
++2
+c
+8
+e
+2
+n
+7
+- ofFRB20171019Awitharadiusof0.12◦,optimalforapoint-like
 sourceofemissionasexpectedfromFRB20171019A.Theback-
 was used as the bandpass calibrator, 1331+3030 as the flux cal-
 groundlevelinthisONregionwasdeterminedusingthestandard
@@ -224,8 +312,8 @@ toderivethebackgroundlevelfromthesamefieldofviewandas-
 tion procedures6 with additional flagging of bad visibilities fol-
 suresthatthegamma-raysignalandbackgroundareestimatedwith
 lowed by imaging. We found two confusing sources in the field,
-at R.A. = 12ℎ 15𝑚 44𝑠 .669, Dec. = −12◦57(cid:48)59(cid:48).(cid:48)56 and R.A. = thesameacceptanceandunderthesameobservationconditions.
-12ℎ 15𝑚 37𝑠 .216,Dec.= −13◦09(cid:48)33(cid:48).(cid:48)44at4.1(cid:48) and9.4(cid:48) fromthe
+at R.A. = 12 ℎ 15 𝑚 44 𝑠 .669, Dec. = −12◦57(cid:48)59(cid:48).(cid:48)56 and R.A. = thesameacceptanceandunderthesameobservationconditions.
+12 ℎ 15 𝑚 37 𝑠 .216,Dec.= −13◦09(cid:48)33(cid:48).(cid:48)44at4.1(cid:48) and9.4(cid:48) fromthe
 pointingcentre,respectively.Theyhadapparentfluxdensitiesof4
 and 1.3mJy without primary beam correction. We used these for 3 RESULTS
 self-calibration of the field and then subtracted them before final
@@ -234,14 +322,14 @@ imaging.Thefinalimagesynthesizedbeamis0(cid:48).(cid:48)65×0(cid:48).(cid:48)15
 tionangle15◦elongatedintheDeclinationdirectionduetothelow ThetheoreticalthermalnoiseoftheMeerKATcanbecalculatedas
 targetelevationfromtheUK.
 1 SEFD
-𝑆 rms= . (1)
-𝜂 √︃
+𝑆 rms = 𝜂 √︃ . (1)
 𝑐 𝑛 ×𝑁(𝑁−1)×Δ𝜈×𝑡
 2.3 TheSwiftsatellite:UVOTandXRTobservations pol int
 The system equivalent flux density (SEFD) of MeerKAT at the
 NeilGehrelsSwiftObservatory(Swift)isamulti-wavelengthNASA
+space mission operating in soft-X-rays and optical/UV. Here we
 1.28GHzis443Jyand𝜂 𝑐isthecorrelatorefficiency.Weused𝑛
-space mission operating in soft-X-rays and optical/UV. Here we pol
+pol
 =2polarisationproducts(XXandYY),N=64telescopes,Δ𝜈 =
 use data from the X-ray Telescope (XRT) (Burrows et al. 2005)
 whichoperatesinthesoftX-raydomainof0.3−10keVaswellas 856MHz bandwidth and 𝑡 int = 21600 sec observing time for one
@@ -301,8 +389,8 @@ The UVOT summed image is presented in Figure 4. The UVOT
 20190714A, detected in both the 14 September 2019 and the 28
 fieldofviewcorrespondsroughlytotheuncertainty7ofthelocali-
 September2019epoch.ThepeakoftheMeerKATradioemission
-sationregionofFRB20171019A(RA=7.5(cid:48)andDEC=7(cid:48)).Using
 isoffsetby∼2(cid:48)(cid:48).1fromthepeakofthe𝑖-bandmagnitudeoftheop-
+sationregionofFRB20171019A(RA=7.5(cid:48)andDEC=7(cid:48)).Using
 uvotdetect,wefind30sourcesabovethe5𝜎levelandwithinthe
 ticalgalaxyidentifiedinthePanoramicSurveyTelescopeandRapid
 FRB 20171019A uncertainty region. Using a 3 arcsec maximum
@@ -319,8 +407,7 @@ arespatiallycoincidentwithstarscataloguedintheSDSScatalogue
 FRB20190714 usetheNASA/IPACExtragalacticDatabase(NED)8 tosearchfor
 knowngalaxiesintheFRB20171019Auncertaintyregions.Wefind
 Compact persistent emission was detected in the 1.51GHz e-
-MERLINimageatR.A.=12ℎ 15𝑚 55𝑠 .116,Dec.=−13◦01(cid:48)14(cid:48).(cid:48)48 m cou nl cti lp ul se iog na sla ox nie ts hew hit oh su tn gk an lao xw yn frr oe mdsh oi uf rts o, bth se er re vf ao tr ioe nw se .Uca sn inn got ad 5ra 0w
-(cid:48)(cid:48)
+MERLINimageatR.A.=12 ℎ 15 𝑚 55 𝑠 .116,Dec.=−13◦01(cid:48)14(cid:48).(cid:48)48 m co u n l c ti l p u l s e io g n a s la o x n ie t s he w h it o h s u t n g k a n la o x w y n fr r o e m dsh o i u f r ts o , b th s e e r r e v f a o t r io e n w s e .U ca s n in n g ot a d 5 ra 0 w (cid:48)(cid:48)
 at 86𝜇Jybeam−1 by e-MERLIN. The stochastic position uncer-
 circularONregioncentredonthepositionofFRB20171019Aand
 tainty is (0.04, 0.15) arcsec and the uncertainty (due to the sepa- a50(cid:48)(cid:48) OFFregionthatdoesnotcontainanyofthedetectedsources,
@@ -340,8 +427,7 @@ e-MERLINfluxscalenominaluncertaintyis∼5%,inthesedatait
 et al. 2007) (Evans et al. 2009) to derive upper limits in the 0.3-
 ispossiblyhigherduetothelowdeclinationofthephase-reference 10 keV range on the count rate of 0.001885 counts.s−1. Using
 source and to the strong RFI which were removed from the data
-but may have affected the linearity of the receiver response. The W 10e 2b 0PI cM mM −S 29( fv ro4 m.11 ta h) ean dd ira es cs tiu om nin og fa thw eei sg oh ut re cd ea ev se tr ia mg ae t𝑁 edH f= ro5 m.1 t2 h×
-e
+but may have affected the linearity of the receiver response. The W 10 e 2 b 0 PI c M m M − S 2 9( f v ro 4 m .11 t a h ) e an d d ir a e s c s ti u o m n in o g f a th w e ei s g o h u t r e c d e a e v s e t r i a m g a e t 𝑁 ed H f = ro 5 m .1 t 2 h × e
 peakofthee-MERLINradioemissionisoffsetby∼1(cid:48).(cid:48)4fromthe
 NASA’s HEASARC 10 online tools (HI4PI Collaboration et al.
 peakofthePanSTARRS𝑖-bandemissioninFigures2and3.The
@@ -409,8 +495,8 @@ IntheimageinFigure3onecanseethatthepersistentradio
 Of the targeted FRB fields reported here, only FRB 20190714A source lies at the edge of the optical extent of the host galaxy
 isobservedtobespatiallycoincidentwithapersistentradiocon- as seen in PanSTARRS observations (Heintz et al. 2020). Our
 tinuumsource.Weobtainanupperlimitof∼ 15𝜇Jybeam−1 for derived 1283MHz peak position with MeerKAT places it just
-FRBs20190711Aand20171019A,respectively,andapeakinten- 1(cid:48).(cid:48)68awayfromthepositionofFRB20190714A(𝛼 𝐽2000,𝛿 𝐽2000
-sity of ∼ 53𝜇Jy beam−1 for the emission coincident with FRB = 12ℎ 15𝑚 55𝑠 .12, -13◦01(cid:48)15(cid:48).(cid:48)70; Heintz et al. 2020). The posi-
+FRBs20190711Aand20171019A,respectively,andapeakinten- 1(cid:48).(cid:48)68awayfromthepositionofFRB20190714A(𝛼 𝐽2000 ,𝛿 𝐽2000
+sity of ∼ 53𝜇Jy beam−1 for the emission coincident with FRB = 12 ℎ 15 𝑚 55 𝑠 .12, -13◦01(cid:48)15(cid:48).(cid:48)70; Heintz et al. 2020). The posi-
 20190714A. This source is detected at both epochs with similar tionaluncertaintyontheFRBpositionis0(cid:48).(cid:48)283.Similarly,thepeak
 intensitieswithinthemeasuredrmsoftheimages(seeTables1and 1.51GHze-MERLINpositionofthepersistentradiosourceissepa-
 2 for details). The values in the Table 2 are derived by carrying ratedfromthepositionofFRB20190714Aby0(cid:48).(cid:48)53.Thepersistent
@@ -621,8 +707,8 @@ deNauroisM.,RollandL.,2009,AstroparticlePhysics,32,231
 Heidelberg,Germany
 14HighEnergyAstrophysicsLaboratory,RAU,123HovsepEmin
 StYerevan0051,Armenia
-15Landessternwarte,UniversitätHeidelberg,Königstuhl,D69117
 APPENDIXA: AUTHORAFFILIATIONS
+15Landessternwarte,UniversitätHeidelberg,Königstuhl,D69117
 Heidelberg,Germany
 1CentreforSpaceResearch,North-WestUniversity,Potchefstroom 16Aix Marseille Université, CNRS/IN2P3, CPPM, Marseille,
 2531,SouthAfrica France

@@ -5,23 +5,20 @@ Prasad Mani ,1 Chris S. Hanson ,2 and Shravan Hanasoge 1,2
 1Department of Astronomy and Astrophysics, Tata Institute of Fundamental Research, Mumbai, India
 2Center for Space Science, NYUAD Institute, New York University Abu Dhabi, Abu Dhabi, UAE
 ABSTRACT
-2202
 The technique of normal-mode coupling is a powerful tool with which to seismically image non-
 axisymmetricphenomenaintheSun. HereweapplymodecouplingintheCartesianapproximationto
 probe steady, near-surface flows in the Sun. Using Doppler cubes obtained from the Helioseismic and
-Magnetic Imager onboard the Solar Dynamics Observatory, we perform inversions on mode-coupling naJ
+Magnetic Imager onboard the Solar Dynamics Observatory, we perform inversions on mode-coupling
 measurements to show that the resulting divergence and radial vorticity maps at supergranular length
 scales (∼30 Mm) near the surface compare extremely well with those obtained using the Local Corre-
-lation Tracking method. We find that the Pearson correlation coefficient is ≥ 0.9 for divergence flows, 1
+lation Tracking method. We find that the Pearson correlation coefficient is ≥ 0.9 for divergence flows,
 while ≥ 0.8 is obtained for the radial vorticity.
-]RS.hp-ortsa[
 Keywords: Helioseismology (709); Solar physics (1476); Supergranulation (1662)
 1. INTRODUCTION
 Helioseismology is the study of the Sun’s internal structure and its properties, by means of interpreting its effect
 on solar oscillations (see Christensen-Dalsgaard 2002, for a review). These are resonant normal modes of the Sun,
 behaving as standing waves in a cavity bounded by the solar surface and a depth that depends on the wavenumber
 of the oscillation. As these waves penetrate the interior, they register information of the properties and dynamics of
-1v87100.1022:viXra
 the solar interior and return to the surface, where they are observed. The internal structure of the Sun can then be
 retrieved through meticulous inversions of these seismic measurements.
 Several important flow systems on the Sun have been inferred using various global and local helioseismic methods.
@@ -44,6 +41,11 @@ et al. 2021). Local mode-coupling analysis in the Cartesian approximation, formu
 validated by Hanson et al. (2021) (hereafter H21) by examining the power-spectrum of supergranular waves and
 comparing with previous time-distance studies (Langfellner et al. 2018).
 prasad.subramanian@tifr.res.in
+2202
+naJ
+1
+]RS.hp-ortsa[
+1v87100.1022:viXra
 2 Mani et al.
 Normal-modecouplingreferstotheconceptofexpressingsolar-oscillationeigenfunctionsasalinearweightedcombi-
 nationofmodel-eigenfunctions(e.g.,ModelSChristensen-Dalsgaard2021). Themodeleigenfunctionsformacomplete
@@ -287,8 +289,8 @@ functionsforeachpoloidalandtoroidal,thedimensionsofK,UandBarethusM×22,22×1,and
 Normalizingbothsidesofeq10bythenoisecovarianceΛ(adiagonalmatrixwiththeentriesG ;seeeq9;dimension
 k,q
 M ×M) and pre-multiplying by K(cid:124),
-(K(cid:124) Λ−1K)U=(K(cid:124) Λ−1)B, (11)
-U=(K(cid:124) Λ−1K)−1K(cid:124) Λ−1B. (12)
+(K (cid:124) Λ−1K)U=(K (cid:124) Λ−1)B, (11)
+U=(K (cid:124) Λ−1K)−1K (cid:124) Λ−1B. (12)
 6 Mani et al.
 Figure 2. Left: Averagingkernelforpoloidalflow(seesectionB.2,eqB17,andleftpanelofFigure8)forqR =[−112,−45],
 (cid:12)
@@ -303,7 +305,7 @@ the regularization parameter λ which this results in a trade-off between misfit
 norm minimization (second term). Under-regularizing can lead to a solution U that is dominated by errors in the
 data and on the other hand, over-regularizing may smooth or damp the solution more than necessary. Including this
 regularization makes the problem better conditioned and is now defined as
-U=(K(cid:124) Λ−1K+λI)−1K(cid:124) Λ−1B, (13)
+U=(K (cid:124) Λ−1K+λI)−1K (cid:124) Λ−1B, (13)
 where I is the identity matrix for L regularization. The knee-point of the L-curve (Hansen 1992), a curve formed
 1
 by plotting ||U|| vs ||KU − B|| for different values of λ (see right panel of Figure 2), is usually chosen as the
@@ -323,8 +325,21 @@ Time series of intensity images from HMI, with the same properties of the Dopple
 tained and Postel projected. The horizontal flows are deduced by tracking the proper motions of granules between
 consecutive intensity images, which we denote as I ,I . The LCT method selects a patch in two images each
 1 2
-(I = I 1e(x−xij)2/2sigma2,I = I 2e(x−xij)2/2sigma2) that observe the same granule at the grid point x = (x i,y j).
-1 2 ij
+(I
+1
+= I
+1
+e(x−xij)2/2sigma2,I
+2
+= I
+2
+e(x−xij)2/2sigma2) that observe the same granule at the grid point x
+ij
+= (x
+i
+,y
+j
+).
 A Gaussian of width sigma allows to isolate a small region surrounding the grid point of interest as the distance
 moved by granules are usually in sub-pixel regime. The convention for the direction of x is the same as described in
 section 1.1. The two patches I ,I are then cross correlated for different values of position shifts ∆x,
@@ -394,13 +409,20 @@ We then perform a 2D Fourier transform on eqns 18 and 19, apply the same Gaussia
 and transform back to real space.
 Condensing all of the above, the following sequence of operations to compare flows at desired length scales are
 performed for mode-coupling (M-C) and for LCT -
-M-C: φ(x,y;t)=3 =D =F =F =T ⇒φω,B =i =nv =e =rs =io =n ⇒P,T =∇ ==h⇒· eqns 16, 17==F =ilt =e =r, ⇒div,curl
+M-C: φ(x,y;t)= 3 = D = F = F = T ⇒φω,B = i = nv = e = rs = io = n ⇒P,T = ∇ ==h⇒ · eqns 16, 17== F = ilt = e = r, ⇒div,curl
 k k,q
 ∇× 2DFFT
 Filtered,
 FLCT smooth, 2DFFT, 2DFFT
-LCT: I 1,I ====⇒v x,v ======⇒eqns 18, 19======⇒Fourier-space =====⇒div,curl
-2 y
+LCT: I
+1
+,I
+2
+====⇒v
+x
+,v
+y
+======⇒eqns 18, 19======⇒Fourier-space =====⇒div,curl
 ∇h· ∇× Filter
 flows
 6. RESULTS
@@ -513,14 +535,14 @@ A. DERIVATION OF THE FORWARD MODEL
 As described in section 1.1, we seek to describe the flow u as a function of q along e . To that end, substituting
 z
 eq 3 into eq 2,
-uσ(z)=(cid:88)(cid:8) q2f e +iqf(cid:48)(cid:9) Pσ +iq×e f Tσ. (A1)
+uσ(z)= (cid:88)(cid:8) q2f e +iqf(cid:48)(cid:9) Pσ +iq×e f Tσ. (A1)
 q j z j jq z j jq
 j
 For flows in the anelastic limit (u (cid:28) speed of sound), we can denote the flow perturbation operator as δLσ =
 −2iωρuσ·∇ (see Hanasoge et al. 2017). Substituting Eq. A1 into the operator, we get,
 δLσ = −2iωρ(iuσ·k+uσ·e ∂ ), (A2)
 q q q z z
-=−2iωρ(cid:80)(cid:8) −k·qf(cid:48)Pσ −k·(q×e )f Tσ +q2f Pσ ∂ (cid:9) . (A3)
+=−2iωρ (cid:80)(cid:8) −k·qf(cid:48)Pσ −k·(q×e )f Tσ +q2f Pσ ∂ (cid:9) . (A3)
 j jq z j jq j jq z
 j
 12 Mani et al.
@@ -532,18 +554,18 @@ two modes ξ and ξ (k(cid:48) = k+q), by the flow perturbation operator δLσ, 
 k k(cid:48) q k(cid:48)
 given by
 (cid:34)
-Λk (σ)≡(cid:90) dx(δLσξ )·ξ∗ =(cid:90) dx −2iωρ(cid:88)(cid:110) q2f Pσ (kˆ·kˆ(cid:48) H(cid:48)H∗ +V(cid:48)V∗)
+Λk (σ)≡ (cid:90) dx(δLσξ )·ξ∗ = (cid:90) dx −2iωρ (cid:88)(cid:110) q2f Pσ (kˆ·kˆ(cid:48) H(cid:48)H∗ +V(cid:48)V∗)
 k(cid:48) q k k(cid:48) j jq k k(cid:48) k k(cid:48)
 j
 (cid:35)
-−(cid:2) k·qf(cid:48)Pσ +k·(q×e )f Tσ(cid:3) (kˆ·kˆ(cid:48) H H∗ +V V∗)(cid:111) (A5)
+− (cid:2) k·qf(cid:48)Pσ +k·(q×e )f Tσ(cid:3) (kˆ·kˆ(cid:48) H H∗ +V V∗) (cid:111) (A5)
 j jq z j jq k k(cid:48) k k(cid:48)
 We desire to linearly relate the coupling integral in the above equation to the flows P and T, through poloidal and
 toroidal sensitivity kernels, C and D respectively. Hence, they are given by
 qj,k qj,k
-C =(cid:90) dzρ(cid:104) q2f (kˆ·kˆ(cid:48) H(cid:48)H∗ +V(cid:48)V∗)
+C = (cid:90) dzρ (cid:104) q2f (kˆ·kˆ(cid:48) H(cid:48)H∗ +V(cid:48)V∗)
 qj,k j k k(cid:48) k k(cid:48)
-−k·qf(cid:48)(kˆ·kˆ(cid:48) H H∗ +V V∗)(cid:105) ,
+−k·qf(cid:48)(kˆ·kˆ(cid:48) H H∗ +V V∗) (cid:105) ,
 j k k(cid:48) k k(cid:48)
 (cid:90)
 D =k·(q×e ) dzρf (kˆ·kˆ(cid:48) H H∗ +V V∗). (A6)
@@ -569,10 +591,13 @@ mode damping −iωγρ as an operator in the differential equation that governs
 5 of Hanasoge et al. 2017), and then deriving the effects of first-order perturbations to the wavefield cross-correlation.
 Also, the parity Hω =H−ω∗ and Rω =R−ω∗ are established. Mode normalization N is given by
 kk(cid:48)σ kk(cid:48)−σ k k
-(cid:80) |φω k|2
-(cid:88)Q
-1
-N = ω , (A10)
+N = 1 (cid:88) Q
+(cid:80)
+ω
+|φω
+k
+|2
+, (A10)
 k Q (cid:80) Rω
 k k
 ω
@@ -655,7 +680,7 @@ Setting ∂X →0 gives us the matrix problem to be solved
 A{α}=v,
 (cid:104) (cid:105)−1
 {α}= A+µI v, (B18)
-where the square matrix A=(cid:82) dzK (z)K (z) and v =(cid:82) dzK (z)T(z,z ). Here, k(cid:48) is just a dummy index for
+where the square matrix A= (cid:82) dzK (z)K (z) and v = (cid:82) dzK (z)T(z,z ). Here, k(cid:48) is just a dummy index for
 k,q k(cid:48),q k,q o
 denotingelementsinthematrixA,(k(cid:48) (cid:54)=k+q). InthelastlineofeqB18,weintroduceregularizationusinganIdentity
 matrix I, with the regularization parameter µ - purpose being the same as that described in section 3.1. Obtaining

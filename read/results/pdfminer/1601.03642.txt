@@ -6,11 +6,10 @@ Martin Thoma
 E-Mail: info@martin-thoma.de
 
 w0
-
 w1
 w2
 w3
-w n
+wn
 
 x0
 x1

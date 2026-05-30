@@ -235,10 +235,10 @@ if __name__ == "__main__":
             "pdf_oxide",
             "https://pypi.org/project/pdf-oxide/",
             text_extraction_function=pdf_oxide_get_text,
-            version="0.3.6",
+            version="0.3.57",
             image_extraction_function=pdf_oxide_image_extraction,
             license="MIT OR Apache-2.0",
-            last_release_date="2026-02-16",
+            last_release_date="2026-05-30",
             dependencies="Rust core via PyO3",
         ),
         "pdfium": Library(
